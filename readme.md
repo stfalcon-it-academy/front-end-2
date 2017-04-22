@@ -1,6 +1,7 @@
 # Основи HTML
 ### Контент і семантика
-> Семантика — розділ мовознавства, пов'язаний з лексикологією; вивчає значення (теж у діахронному, іст. перекрої) слів і їх складових частин, словосполук і фразеологізмів.
+> Семантика — розділ мовознавства, пов'язаний з лексикологією; вивчає значення (теж у діахронному, іст. перекрої) слів 
+і їх складових частин, словосполук і фразеологізмів.
 
 ### Теги і атрибути
 ### Атрибути
@@ -20,22 +21,22 @@
 ### Структура контенту
 1. `<body>`
 1. `<article>`
-1. `<section>` [?](https://jsfiddle.net/P3trovichUA/6sxxL0jb/)
-1. `<nav>` [?](https://jsfiddle.net/P3trovichUA/yr2ycp0d/)
+1. `<section>`
+1. `<nav>`
 1. `<aside>`
-1. `<h1>, <h2>, <h3>, <h4>, <h5>, <h6>` [?](https://jsfiddle.net/P3trovichUA/7kLjxmyd/)
+1. `<h1>, <h2>, <h3>, <h4>, <h5>, <h6>`
 1. `<header>`
 1. `<footer>`
-1. `<address>` [?](https://jsfiddle.net/P3trovichUA/pyebvefv/)
+1. `<address>`
 
 ### Групування контенту
 1. `<p>`
-1. `<hr>` [?](https://jsfiddle.net/P3trovichUA/4uha3r5j/)
-1. `<pre>` [?](https://jsfiddle.net/P3trovichUA/jqnbdevr/)
-1. `<blockquote>` [?](https://jsfiddle.net/P3trovichUA/wqj0un1k/1/)
-1. `<ol>, <ul>, <li>` [?](https://jsfiddle.net/P3trovichUA/7ojfxw84/)
-1. `<dl>, <dt>, <dd>` [?](https://jsfiddle.net/P3trovichUA/0onou0bs/)
-1. `<figure>, <figcaption>` [?](https://jsfiddle.net/P3trovichUA/nrz3fco8/)
+1. `<hr>`
+1. `<pre>`
+1. `<blockquote>`
+1. `<ol>, <ul>, <li>` [?](https://jsfiddle.net/inlen/cr8z9319/)
+1. `<dl>, <dt>, <dd>` [?](https://jsfiddle.net/inlen/Lmvaewe0/)
+1. `<figure>, <figcaption>` [?](https://jsfiddle.net/inlen/h5hkvsqa/)
 1. `<div>`
 1. `<main>`
 
@@ -48,26 +49,26 @@
 1. `<u>`
 1. `<s>`
 1. `<del>`
-1. `<ins>` [?](https://jsfiddle.net/P3trovichUA/5o5ydu2x/1/)
+1. `<ins>` [?](https://jsfiddle.net/inlen/du4dajLw/)
 1. `<q>`
-1. `<cite>`[?](https://jsfiddle.net/P3trovichUA/wqj0un1k/1/)
-1. `<abbr>` [?](https://jsfiddle.net/P3trovichUA/tt1m0t3u/)
-1. `<time>` [?](https://jsfiddle.net/P3trovichUA/vu71gbah/)
+1. `<cite>`[?](https://jsfiddle.net/inlen/1fp4euuk/1/)
+1. `<abbr>`
+1. `<time>`
 1. `<var>`
-1. `<sub>, <sup>` [?](https://jsfiddle.net/P3trovichUA/ha4urh3c/)
+1. `<sub>, <sup>` [?](https://jsfiddle.net/inlen/5uLw0mac/)
 1. `<span>`
 1. `<br>`
-1. `<wbr>` [?](https://jsfiddle.net/P3trovichUA/v6fh77ug/)
+1. `<wbr>` [?](https://jsfiddle.net/inlen/56p5ktvy/)
 
 ### Вбудований контент
-1. `<img>` [?](https://jsfiddle.net/P3trovichUA/xrhp4fh1/)
+1. `<img>` [?](https://jsfiddle.net/inlen/cg4p7ozo/)
 1. `<iframe>`
-1. `<embed>, <object>` [?](https://jsfiddle.net/P3trovichUA/LL2c2k0q/)
-1. `<video>` [?](https://jsfiddle.net/P3trovichUA/8hxqt9jw/)
+1. `<embed>, <object>` [?](https://jsfiddle.net/inlen/nh5z2qyv/)
+1. `<video>` [?](https://jsfiddle.net/inlen/1tdzyeea/)
 1. `<audio>`
 
 ### Табличні дані
-1. `<table>` [?](https://jsfiddle.net/P3trovichUA/rmfh78oa/) 
+1. `<table>` [?](https://jsfiddle.net/inlen/1wj4zu89/) 
 1. `<caption>`
 1. `<tbody>`
 1. `<thead>`
@@ -77,7 +78,7 @@
 1. `<th>`
 
 ### Форми
-1. `<form>` [?](https://jsfiddle.net/P3trovichUA/Lyevpwfp/1/)
+1. `<form>` [?](https://jsfiddle.net/inlen/3yo0jyb7/)
 1. `<label>`
 1. `<input>`
 1. `<button>`
