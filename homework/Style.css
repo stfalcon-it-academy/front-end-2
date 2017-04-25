@@ -1,0 +1,9 @@
+h1, h2 {
+	color: red;
+}
+h3 ~ p {
+	color: green;
+}
+ol li > p {
+	color: red;
+}
