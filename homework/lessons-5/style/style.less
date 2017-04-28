@@ -91,8 +91,11 @@ div.fullstory-text {
 	margin: 1.6rem 0 0 0;
 	line-height: @font-lineheight-default;
 	&>p {
+		text-align: justify;
 		padding-bottom: 1.55rem;
-    text-align: justify;
+		&+ p {
+			padding-bottom: 1.55rem;
+		}
 		&:last-child {
 			padding-bottom: 0;
 		}
