@@ -26,6 +26,7 @@ article.fullstory-wrap > h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   color: #000000;
+  text-transform: capitalize;
 }
 div.fullstory-footer-panel {
   padding-bottom: 1rem;
