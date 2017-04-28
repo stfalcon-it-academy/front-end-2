@@ -64,19 +64,6 @@ div.fullstory-text > p + p {
 div.fullstory-text > p:last-child {
   padding-bottom: 0;
 }
-div.fullstory-text {
-  margin: 1.6rem 0 0 0;
-  line-height: 1.55rem;
-}
-div.fullstory-text > p {
-  text-align: justify;
-}
-div.fullstory-text > p + p {
-  padding-bottom: 1.55rem;
-}
-div.fullstory-text > p:last-child {
-  padding-bottom: 0;
-}
 @media only screen and (min-width: 1024px) {
   article.fullstory-wrap {
     width: 50%;
