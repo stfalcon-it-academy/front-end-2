@@ -1,0 +1,47 @@
+body
+{
+  font-family: Myriad Pro,serif;
+}
+h1
+{
+  font-size: 24px;
+  color:black;
+  text-align: left;
+  margin: 18px;
+}
+nav
+{
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 67px;
+}
+li
+{
+  color:#666666;
+  display: inline;
+  margin-right: 17px;
+
+}
+span
+{
+  color:#999999;
+}
+p
+{
+  font-size: 15px;
+  white-space: nowrap;
+  color:#333333;
+  line-height: 26px;
+  text-align: justify;
+  margin-bottom: 43px;
+}
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+.left
+{
+  border-left: 2px solid #999999;
+  padding-left: 21px;
+  }
