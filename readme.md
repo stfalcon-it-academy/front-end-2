@@ -1,105 +1,61 @@
-# Основи HTML
-### Контент і семантика
-> Семантика — розділ мовознавства, пов'язаний з лексикологією; вивчає значення (теж у діахронному, іст. перекрої) слів 
-і їх складових частин, словосполук і фразеологізмів.
+# Введення в CSS 
+### Способи додавання CSS на сторінку
+1. `<link rel="stylesheet" href="#">`
+1. `<style></style>`
+1. Атрибут `style`
 
-### Теги і атрибути
-### Атрибути
-1. `id`
-1. `class`
-1. `title`
-1. `lang`
-1. `style`
+### Синтаксис
+1. Селектор і правила.
+1. Групування селекторів.
 
-### Документ і метадані
-1. `<!DOCTYPE>`
-1. `<html>`
-1. `<meta>`
-1. `<title>`
-1. `<head>`
+### Селектори
+1. Селектори тегів.
+1. Селектори класів.
+1. Селектори `id`
+1. Універсальний селектор.
+1. Селектори вкладених елементів:
+  - елементи нащадки.
+  - дочірні елементи.
+1. Селектори сусідніх елементів.
+1. Селектори атрибутів.
+  - `[attr]`
+  - групування `[attr][attr]`
+  - `[attr=val]`
+  - `[attr~=val]`
+  - `[attr|=val]`
+  - `[attr^=val]`
+  - `[attr$=val]`
+  - `[attr*=val]`
 
-### Структура контенту
-1. `<body>`
-1. `<article>`
-1. `<section>`
-1. `<nav>`
-1. `<aside>`
-1. `<h1>, <h2>, <h3>, <h4>, <h5>, <h6>`
-1. `<header>`
-1. `<footer>`
-1. `<address>`
+### Вага селекторів
+1. `0.0.0.0` `*`
+1. `0.0.0.1` селектори елементів і псевдоелементів
+1. `0.0.1.0` селектори класів, атрибутів і псевдокласів
+1. `0.1.0.0` `#`
+1. `1.0.0.0` атрибут `style`
+1. Порядок оголошення в документі.
+1. `!important`
 
-### Групування контенту
-1. `<p>`
-1. `<hr>`
-1. `<pre>`
-1. `<blockquote>`
-1. `<ol>, <ul>, <li>` [?](https://jsfiddle.net/inlen/cr8z9319/)
-1. `<dl>, <dt>, <dd>` [?](https://jsfiddle.net/inlen/Lmvaewe0/)
-1. `<figure>, <figcaption>` [?](https://jsfiddle.net/inlen/h5hkvsqa/)
-1. `<div>`
-1. `<main>`
-
-### Семантика на рівні тексту
-1. `<a>`
-1. `<em>`
-1. `<i>`
-1. `<strong>`
-1. `<b>`
-1. `<u>`
-1. `<s>`
-1. `<del>`
-1. `<ins>` [?](https://jsfiddle.net/inlen/du4dajLw/)
-1. `<q>`
-1. `<cite>`[?](https://jsfiddle.net/inlen/1fp4euuk/1/)
-1. `<abbr>`
-1. `<time>`
-1. `<var>`
-1. `<sub>, <sup>` [?](https://jsfiddle.net/inlen/5uLw0mac/)
-1. `<span>`
-1. `<br>`
-1. `<wbr>` [?](https://jsfiddle.net/inlen/56p5ktvy/)
-
-### Вбудований контент
-1. `<img>` [?](https://jsfiddle.net/inlen/cg4p7ozo/)
-1. `<iframe>`
-1. `<embed>, <object>` [?](https://jsfiddle.net/inlen/nh5z2qyv/)
-1. `<video>` [?](https://jsfiddle.net/inlen/1tdzyeea/)
-1. `<audio>`
-
-### Табличні дані
-1. `<table>` [?](https://jsfiddle.net/inlen/1wj4zu89/) 
-1. `<caption>`
-1. `<tbody>`
-1. `<thead>`
-1. `<tfoot>`
-1. `<tr>`
-1. `<td>`
-1. `<th>`
-
-### Форми
-1. `<form>` [?](https://jsfiddle.net/inlen/3yo0jyb7/)
-1. `<label>`
-1. `<input>`
-1. `<button>`
-1. `<select>, <option>`
-1. `<textarea>`
-1. `<fieldset>, <legend>`
-
-### Валідація
+### Naming conventions
+- [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.xml)
+- [Способы организации CSS-кода](https://habrahabr.ru/post/256109/)
+- [Начинаем писать CSS](http://frontender.info/starting-css/)
+- [BEM и SMACSS — выбираем CSS методологию](https://uwebdesign.ru/bem-smacss/)
 
 ---
 # Домашнє завдання
-1.  Відтворити даний зміст уроку на HTML.
-1.  Роботу виконати в файлі `homework/index.html`.
+1. В контент кожного елемента з файлу `homework/index.html` додати список селекторів, якими можна вибрати цей елемент.
+1. Не потрібно вказувати селектор `*`.
+1. Не потрібно опрацьовувати тег `head` і його вміст.
 
 ---
 # Лінки
-- [Самоучитель HTML](http://htmlbook.ru/samhtml)
-- [Справочник по HTML﻿](http://htmlbook.ru/html)
-- [HTML5﻿](http://htmlbook.ru/html5)
-- [Это — грёбаный сайт.](https://fuckingwebsite.ru)
-- [Недоступный веб: как мы развели такой бардак](https://habrahabr.ru/post/309076/)
-- [Что такое DOM?](http://frontender.info/dom/)
-- [Искусство семантики HTML](http://frontender.info/the-art-of-html-semantics-pt1/)
-- [Понимание семантики](http://css-live.ru/articles/ponimanie-semantiki.html)
+- [Самоучитель CSS](http://htmlbook.ru/samcss)
+- [Самоучитель CSS](http://htmlbook.ru/css)
+- [Рецепты CSS](http://htmlbook.ru/faq)
+- [Дэвид Макфарланд. Новая большая книга CSS](https://www.dropbox.com/s/xgrfscrs63dzd2m/%D0%94%D0%B5%D0%B2%D0%B8%D0%B4%20%D0%9C%D0%B0%D0%BA%D1%84%D0%B0%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%20-%20%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0%20CSS%28%D0%91%D0%B5%D1%81%D1%82%D1%81%D0%B5%D0%BB%D0%BB%D0%B5%D1%80%D1%8B%20O%27Reilly%29%20-%202016.pdf?dl=0) 
+- [Леа Веру. Секреты CSS. Идеальные решения ежедневных задач. 2016](https://www.dropbox.com/s/9tsblinq6dcskrz/%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B_CSS__%D0%98%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD.pdf?dl=0)
+- [Мейер Э.А. CSS - каскадные таблицы стилей. Подробное руководство(3-е издание). 2008](https://www.dropbox.com/s/p6ijefomlwhi8ql/CSS%20-%20%D0%9A%D0%B0%D1%81%D0%BA%D0%B0%D0%B4%D0%BD%D1%8B%D0%B5%20%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%8B%20%D1%81%D1%82%D0%B8%D0%BB%D0%B5%D0%B9.%20%D0%9F%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE.%203-%D0%B5%20%D0%B8%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5.pdf?dl=0)
+- [Семантичный CSS с умными селекторами](http://frontender.info/semantic-css-with-intelligent-selectors/)
+- [Аксиоматический CSS и лоботомированные совы](http://frontender.info/axiomatic-css-and-lobotomized-owls/)
+- [Директивы CSS](http://frontender.info/the-at-rules-of-css/)
