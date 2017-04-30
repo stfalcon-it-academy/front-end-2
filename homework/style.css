@@ -2,12 +2,16 @@ html
 {
   font-family: "Montsserat", sans-serif;
 }
+#wrapper{
+  width:870px;
+  margin:0 auto;
+}
 h1
 {
   font-size: 24px;
   color:black;
   text-align: left;
-  margin: 18px;
+  margin: 18px 0;
 }
 nav
 {
@@ -18,7 +22,7 @@ nav
 li
 {
   color:#666666;
-  display: inline;
+  display: inline-block;
   margin-right: 17px;
 
 }
@@ -29,7 +33,6 @@ span
 p
 {
   font-size: 15px;
-  white-space: nowrap;
   color:#333333;
   line-height: 26px;
   text-align: justify;
