@@ -1,0 +1,44 @@
+html {
+  font-family: MyriadProRegular, sans-serif ;
+  width: 870px;
+  height: 650px;
+  margin: 60px 30px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+nav {
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 65px;
+}
+
+li {
+   color:#666666;
+   display: inline-block;
+   margin-right: 19px;
+}
+
+span{
+  color:#999999;
+}
+
+p {
+  font-size: 15px;
+  color:#333333;
+  text-align: justify;
+  line-height: 21px;
+  margin-bottom: 43px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.border {
+   border-left: 3px solid #999999;
+   padding-left: 19px;
+}
