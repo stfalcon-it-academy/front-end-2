@@ -1,0 +1,25 @@
+.block {
+  background-color: #FAFAFA;
+  padding: 0px 35px 0px 35px;
+}
+.block p {
+  text-align: justify;
+}
+.info a {
+  color: #222222;
+  text-decoration: none;
+}
+
+.info1 {
+  color: #BFBFBF;
+}
+
+.text {
+  margin: 0 0 16px;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #222222;
+}
