@@ -1,37 +1,59 @@
 html {
-  font-family: "Myriad Pro", sans-serif;
-  width: 960px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  width: 870px;
   margin: 40px 15px;
 }
 h1 {
-  font-size: 30px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.084;
 }
+
 nav {
-  font-size: 16px;
   text-align: left;
   margin-bottom: 60px;
 }
-li {
-  color: #666666;
-  display: inline-block;
-  margin-right: 20px;
-}
-span {
-  color: #999999;
-}
+
 p {
-  font-size: 16px;
+  font-size: 1rem;
   color: #333333;
-  line-height: 25px;
+  line-height: 1.7333;
   text-align: justify;
   margin-bottom: 30px;
   hyphens: auto;
 }
-ul {
+.article-info {
+  list-style: none;
+  padding: 0;
   padding-left: 0;
 }
-.navi {
-  border-left: 2px solid #999999;
-  padding-left: 20px;
+
+.article-info li {
+  color: #999999;
+  display: inline-block;
+  font-size: 0.9333rem;
+  line-height: 1.8571;
+  }
+
+.article-info li:after{
+  margin: 0px 15px;
+  content: '|';
+  color: #999999;
 }
+
+.article-info li:last-child:after {
+  content: '';
+}
+
+.article-info a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.article-info a:hover {
+  text-decoration: underline;
+}
+
+
 
