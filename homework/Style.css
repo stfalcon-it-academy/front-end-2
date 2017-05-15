@@ -1,0 +1,59 @@
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  width: 870px;
+  margin: 40px 15px;
+}
+h1 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.084;
+}
+
+nav {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+p {
+  font-size: 1rem;
+  color: #333333;
+  line-height: 1.7333;
+  text-align: justify;
+  margin-bottom: 30px;
+  hyphens: auto;
+}
+.article-info {
+  list-style: none;
+  padding: 0;
+  padding-left: 0;
+}
+
+.article-info li {
+  color: #999999;
+  display: inline-block;
+  font-size: 0.9333rem;
+  line-height: 1.8571;
+  }
+
+.article-info li:after{
+  margin: 0px 15px;
+  content: '|';
+  color: #999999;
+}
+
+.article-info li:last-child:after {
+  content: '';
+}
+
+.article-info a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.article-info a:hover {
+  text-decoration: underline;
+}
+
+
+
