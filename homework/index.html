@@ -2,52 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="normalize.css">
-  <title>Title</title>
+  <title>Homework6</title>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="header">
-      <div class="header-top">
-        <a href="#">(+123)456 789</a>
-        <div class="user-log">
-          <a href="">Log in</a>
-          <span>or</span>
-          <a href="">Register</a>
+  <header>
+      <div class="header-top clear-fix">
+        <div class="content">
+            <a class="phone" href="#">(+123)456 789</a>
+            <div class="user-log">
+              <a href="">Log in</a>
+              <span>or</span>
+              <a href="">Register</a>
+            </div>
         </div>
       </div>
-     </div>
-
-    <div class="header-2">
-      <div class="header-content">
-        <a href="#">
-          <img src="Logo.png" alt="logo">
-        </a>
-        <input type="text" placeholder="Search Product...">
-        <a id="search" href="#"><img src="Search.png" alt=""></a>
-        <nav>
-          <ul>
-            <li id="li_orange">Home</li>
-            <li>Living room</li>
-            <li>Office</li>
-            <li>Bedroom</li>
-            <li>Blog</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-        <a id="bag" href="#"><img src="Bag.png" alt=""></a>
-        <a id="circle" href="#"><img src="circle.png" alt=""></a>
+      <div class="header-content clear-fix">
+        <div class="content">
+          <a href="#"><img class="logo" src="Logo.png" alt="logo"></a>
+          <form action="#" method="get" class="search" >
+            <input type="search" placeholder="Search Product...">
+            <button></button>
+          </form>
+          <nav>
+            <ul>
+              <li><a id="orange" href="#">Home</a></li>
+              <li><a href="#">Living room</a></li>
+              <li><a href="#">Office</a></li>
+              <li><a href="#">Bedroom</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <a class="bag" href="#"><img src="Bag.png" alt=""></a>
+        </div>
       </div>
-    </div>
+  </header>
 
-    <div class="content">
-      <div>
-        <p id="contact">contact us</p>
-        <span> HOME / </span>
-        <span> CONTACT</span>
+<div class="contact">
+ <div class="content clear-fix">
+      <div class=contact-us>
+        <a href="#">contact us</a>
+        <div class="HC">
+          <a href="#">HOME /</a>
+          <a href="#">CONTACT</a>
+        </div>
       </div>
-    </div>
-  </div>
+ </div>
+</div>
+
 </body>
 </html>
