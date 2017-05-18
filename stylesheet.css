@@ -1,0 +1,43 @@
+html {
+  font-family: 'Montserrat', sent-serif;
+  font-size: 15px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.084;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7333;
+}
+
+.article-info {
+  list-style: none;
+  padding:0;
+}
+
+.article-info li {
+  display: inline-block;
+  color: #999999;
+  font-size: 0.9333rem;
+  line-height: 1.8571;
+}
+
+.article-info li + li:before {
+  margin: 0 15px;
+  background-color: #999999;
+  content: '|';
+}
+
+.article-info a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.article-info a:hover {
+  text-decoration: underline;
+}
+
