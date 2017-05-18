@@ -1,9 +1,8 @@
 body{
-margin: 0px;
+margin: 0;
 }
 div{
   width: 820px;
-  height: 530px;
   counter-reset: my-counter;
 }
 
@@ -24,7 +23,7 @@ li:before {
   position: absolute;
   left: -50px;
   text-align: center;
-  line-height: 75px;
+  line-height: 2.5;
   width: 50px;
   height: 100%;
   font-size: 30px;
@@ -39,6 +38,6 @@ li:nth-child(2n):before {
 }
 
 li:first-child:before{
-  line-height: 150px;
+  line-height: 5;
 }
 
