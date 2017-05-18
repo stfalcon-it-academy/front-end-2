@@ -1,44 +1,36 @@
 html {
-  font-family: MyriadProRegular, sans-serif ;
+  font-family: "Montserrat", sans-serif ;
   width: 870px;
-  height: 655px;
   margin: 60px 30px;
 }
-
 h1 {
   font-size: 24px;
+  line-height: 1.084;
 }
-
-nav {
-  font-size: 14px;
-  text-align: left;
-  margin-bottom: 65px;
+.info {
+  list-style: none;
+  padding: 0;
 }
-
-li {
-   color:#666666;
-   display: inline-block;
-   margin-right: 19px;
-}
-
-span{
+.info li {
   color:#999999;
+  font-size: 14px;
+  display: inline-block;
+  line-height: 1.86;
+  padding-bottom: 40px;
 }
-
+.info a{
+  color:#666666;
+  text-decoration: none;
+}
 p {
   font-size: 15px;
   color:#333333;
   text-align: justify;
-  line-height: 21px;
-  margin-bottom: 43px;
+  line-height: 1.7;
 }
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.border {
-   border-left: 3px solid #999999;
-   padding-left: 19px;
+li:not(:first-child):before{
+  color:  #999999;
+  padding: 0 20px;
+  content: "|";
+  font-weight: bold;
 }
