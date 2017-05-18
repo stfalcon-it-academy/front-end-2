@@ -1,0 +1,43 @@
+body{
+margin: 0;
+}
+div{
+  width: 820px;
+  counter-reset: my-counter;
+}
+
+li:nth-child(odd){
+  background: #cccccc;
+}
+
+li{
+  counter-increment: my-counter;
+  position: relative;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+li:before {
+  display: inline-block;
+  position: absolute;
+  left: -50px;
+  text-align: center;
+  line-height: 2.5;
+  width: 50px;
+  height: 100%;
+  font-size: 30px;
+  color: #ffffff;
+  content: counter(my-counter);
+}
+li:nth-child(2n-1):before{
+  background: #cc4242;
+}
+li:nth-child(2n):before {
+    background:#ff5353;
+}
+
+li:first-child:before{
+  line-height: 5;
+}
+
