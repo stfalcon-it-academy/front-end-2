@@ -3,14 +3,15 @@ html
 
 body
 {
-  min-width: 1170px;
+
   margin: 0;
+  min-width: 320px;
 }
 
 .container
 {
   margin: 0 auto;
-  width: 1170px;
+  max-width: 1170px;
 }
 
 .clear-fix:after  /**что это?*/
@@ -45,6 +46,16 @@ body
   line-height: 1.7;
 }
 
+@media(max-width: 480px){
+  .register,
+  .header-phone
+  {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+}
+
 .register a
 {
   color:#666666;
@@ -75,14 +86,27 @@ body
 .search
 {
   float: right;
-}
-
-.search
-{
   border: 1px solid #323232;
 }
-
-
+@media(max-width: 480px) {
+  .header-middle
+  {
+    text-align: center;
+  }
+  .logo
+   {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .search {
+    display: inline-block;
+  }
+  .logo,
+  .search{
+    float: none;
+  }
+}
 
 .search input
 {
@@ -137,6 +161,17 @@ display: inline-block;
   margin-left:44px;
 }
 
+@media (max-width: 660px) {
+  .menu li
+  {
+    display: block;
+  }
+  .menu li + li
+  {
+    margin: 0;
+  }
+}
+
 .menu a
 {
   font-size: 16px;
@@ -162,6 +197,8 @@ display: inline-block;
   color: #232323;
 }
 
+
+
 .bag:after{
   position: relative;
   top: -10px;
@@ -177,8 +214,24 @@ display: inline-block;
   content: attr(data-count);
 }
 
+@media(max-width: 480px){
+  .bag
+  {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
 
+  }
+  .bag:after
+  {
+    margin-bottom: 20px;
+    position: relative;
+    top: -10px;
+    right: -215px;
 
-/**ширина всего 1920 должна быть?*/
+  }
+
+}
+
 
 
