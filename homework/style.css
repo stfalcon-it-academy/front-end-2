@@ -7,6 +7,7 @@ body {
 }
 .container {
   width:1170px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -63,9 +64,6 @@ body {
 
 .header-search {
   float: right;
-}
-
-.header-search {
   border: 1px solid #323232;
 }
 
