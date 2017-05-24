@@ -36,8 +36,6 @@ body{
   line-height: 2;
 }
 
-
-
 .header-content{
   background-color: #232323;
   padding: 30px 0;
@@ -50,7 +48,7 @@ body{
   border: 2px solid #323232;
 }
 input{
-  width: 270px;
+  width: 220px;
   background-color: inherit;
   vertical-align: top;
   color: #666666;
@@ -112,36 +110,39 @@ li > a{
   border-radius: 100% ;
   text-align: center;
   font-size: 12px;
+  color: #232323;
 }
 
 .contact {
   padding: 30px 0;
-  background-color: #f7f7f7;;
-  font-size: 14px;
-  box-sizing: border-box;
+  background-color: #f7f7f7;
+
 }
 .contact > .content{
-  background-color: #e7e7e7 ;
+  background-color: #e7e7e7;
+  padding:40px 0;
+
 }
 .contact-us a{
-  padding: 40px;
-  text-decoration: none;
+  padding-left: 43px ;
   float: left;
+  text-decoration: none;
   text-transform: uppercase;
   font-size: 30px;
+  line-height: 0.8;
   color: #232323;
- }
-.HC a{
+}
+.HC {
+  padding-right: 23px;
+  float: right;
   font-size: 14px;
+  line-height: 1.7;
+}
+.HC a{
+  text-decoration: none;
   color: #999999;
-  padding: 50px 5px;
 }
 
 .HC a + a{
   color: #666666;
-  padding-right: 27px;
-  padding-left: 2px;
-}
-.HC {
-  float: right;
 }
