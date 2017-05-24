@@ -6,6 +6,7 @@ body{
   margin: 0 auto;
   max-width: 1170px;
 }
+
 .clear-fix:after{
   content: '';
   display: table;
@@ -16,19 +17,8 @@ body{
   background-color: #2b2b2b;
   font-size: 14px;
   line-height: 1.7;
-
 }
-@media (max-width: 479px) and (min-width: 320px){
- body{
-   background-color: aquamarine;
 
- }
-/*   .user-log,
-  .phone{
-    display: block;
-    float: none;
-  }*/
-}
 .phone {
   color: #7f7f7f;
   font-size: 14px;
@@ -49,6 +39,16 @@ body{
   line-height: 2;
 }
 
+@media (max-width: 479px){
+  .header-top{
+    text-align: center;
+  }
+  .user-log,
+  .phone{
+    display: block;
+    float: none;
+  }
+}
 
 .header-content{
   background-color: #232323;
@@ -59,16 +59,17 @@ body{
 }
 .search{
   float: right;
+  border: 2px solid #323232;
 }
 input{
-  width: 270px;
+  width: 255px;
   background-color: inherit;
   vertical-align: top;
   color: #666666;
-  border: 2px solid #323232;
   font-size: 13px;
+  line-height: 1.85;
   padding: 15px ;
-
+  border: none;
 }
 button {
   display: inline-block;
@@ -77,18 +78,25 @@ button {
   background: transparent url(Search.png) 0 0 no-repeat;
   border: none;
 }
+@media (max-width: 479px) {
+  .header-content{
+    text-align: center;
+  }
+  .logo,
+  .search{
+    float: none;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
 
+}
 
 nav:before{
   content: '';
   display: table;
   clear: both;
 }
-@media (max-width: 479px) {
-  li{
-   display: block;
-  }
-}
+
 ul {
   margin-top: 30px;
   float: left;
@@ -97,12 +105,20 @@ ul {
   font-size: 16px;
   line-height: 1.5;
 }
-
 li {
   display: inline-block;
 }
 li+li{
   padding-left: 45px;
+}
+@media (max-width: 650px){
+  li{
+    display: block;
+    text-align: left;
+  }
+  li+li{
+    padding: 0px;
+  }
 }
 li > a{
   text-decoration: none;
@@ -111,40 +127,67 @@ li > a{
 #orange{
   color: #be926f;
 }
+
 .bag{
   float: right;
-  margin-top: 25px;
+  margin-top: 30px ;
 }
-
-
+.bag:after{
+  display: inline-block;
+  position:relative;
+  top: -15px;
+  right: 7px;
+  width: 18px;
+  height: 18px;
+  content: '2';
+  line-height: 1.5;
+  background: #be926f;
+  border-radius: 100% ;
+  text-align: center;
+  font-size: 12px;
+  color: #232323;
+}
 
 .contact {
   padding: 30px 0;
-  background-color: #f7f7f7;;
-  font-size: 14px;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+
 }
 .contact > .content{
-  background-color: #e7e7e7 ;
+  background-color: #e7e7e7;
+  padding:40px;
+
 }
 .contact-us a{
-  padding: 40px;
-  text-decoration: none;
   float: left;
+  text-decoration: none;
   text-transform: uppercase;
   font-size: 30px;
+  line-height: 0.8;
   color: #232323;
 }
-.HC a{
+.HC {
+  float: right;
+  top:-50%;
   font-size: 14px;
+  line-height: 1.7;
+}
+.HC a{
+  text-decoration: none;
   color: #999999;
-  padding: 50px 5px;
 }
 
 .HC a + a{
   color: #666666;
-  padding-right: 27px;
-  padding-left: 2px;
 }
-.HC {
-  float: right;
+
+@media (max-width: 420px){
+  .contact{
+    text-align: center;
+  }
+  .contact-us a,
+  .HC{
+    float: none;
+  }
 }
