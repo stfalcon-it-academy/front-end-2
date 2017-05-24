@@ -85,8 +85,10 @@ button {
   .logo,
   .search{
     float: none;
+  }
+  .search{
+    margin-top: 10px;
     display: inline-block;
-    margin-bottom: 10px;
   }
 
 }
@@ -156,10 +158,10 @@ li > a{
 }
 .contact > .content{
   background-color: #e7e7e7;
-  padding:40px;
-
+  padding:40px 0;
 }
 .contact-us a{
+  padding-left: 43px;
   float: left;
   text-decoration: none;
   text-transform: uppercase;
@@ -168,6 +170,7 @@ li > a{
   color: #232323;
 }
 .HC {
+  padding-right: 23px;
   float: right;
   top:-50%;
   font-size: 14px;
@@ -182,12 +185,13 @@ li > a{
   color: #666666;
 }
 
-@media (max-width: 420px){
+@media (max-width: 479px){
   .contact{
     text-align: center;
   }
   .contact-us a,
   .HC{
     float: none;
+    padding: 0;
   }
 }
