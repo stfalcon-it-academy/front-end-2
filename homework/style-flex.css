@@ -1,0 +1,172 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  min-width: 320px;
+}
+.content{
+  margin: 0 auto;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 479px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.header-top {
+  padding: 5px 0;
+  background-color: #2b2b2b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.phone {
+  color: #7f7f7f;
+  font-size: 14px;
+  text-decoration: none;
+}
+.user-log a {
+  color: #666666;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.user-log span{
+  font-size: 12px;
+  color: #3b3b3b;
+  line-height: 2;
+}
+
+.header-content{
+  background-color: #232323;
+  padding: 30px 0;
+}
+.search{
+  border: 2px solid #323232;
+}
+input{
+  width: 255px;
+  background-color: inherit;
+  vertical-align: top;
+  color: #666666;
+  font-size: 13px;
+  line-height: 1.85;
+  padding: 15px ;
+  border: none;
+}
+button {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background: transparent url(Search.png) 0 0 no-repeat;
+  border: none;
+}
+@media (max-width: 479px) {
+  .search{
+    margin-top: 10px;
+  }
+}
+ul {
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.5;
+}
+li {
+  display: inline-block;
+}
+li+li{
+  padding-left: 45px;
+}
+@media (max-width: 650px){
+  .content + .content{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  li{
+    display: flex;
+    flex-direction: column;
+  }
+  li+li{
+    padding: 0;
+  }
+}
+li > a{
+  text-decoration: none;
+  color: #ffffff;
+}
+li> a:hover{
+  transition: color 0.2s;
+  color:#be926f;
+}
+#orange{
+  color:#be926f;
+}
+
+.bag{
+  margin-top: 30px ;
+}
+.bag:after{
+  display: inline-block;
+  position:relative;
+  top: -15px;
+  right: 7px;
+  width: 18px;
+  height: 18px;
+  content: '2';
+  line-height: 1.5;
+  background: #be926f;
+  border-radius: 100% ;
+  text-align: center;
+  font-size: 12px;
+  color: #232323;
+}
+
+.contact {
+  padding: 30px 0;
+  background-color: #f7f7f7;
+}
+.contact > .content{
+  background-color: #e7e7e7;
+  padding:40px 0;
+}
+.contact-us a{
+  padding-left: 43px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 0.8;
+  color: #232323;
+}
+.HC {
+  padding-right: 23px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.HC a{
+  text-decoration: none;
+  color: #999999;
+}
+.HC a:hover{
+  transition: font-size 0.2s ;
+  font-size: 18px;
+  color: #000000;
+}
+.HC a + a{
+  color: #666666;
+}
+@media (max-width: 479px){
+  .contact{
+    text-align: center;
+  }
+  .contact-us a,
+  .HC{
+    padding: 0;
+  }
+}
+

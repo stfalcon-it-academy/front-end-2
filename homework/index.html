@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-flex.css">
   <link rel="stylesheet" href="normalize.css">
   <title>Homework11</title>
 </head>
@@ -21,36 +23,39 @@
   </div>
   <div class="header-content">
     <div class="content">
-      <a href="#"><img class="logo" src="Logo.png" alt="logo"></a>
+      <a href="#" class="logo" ><img src="Logo.png" alt="logo"></a>
       <form action="#" method="get" class="search" >
         <input type="search" placeholder="Search Product...">
         <button></button>
       </form>
     </div>
-    <div class="content">
-      <nav>
-        <ul>
-          <li><a id="orange" href="#">Home</a></li>
-          <li><a href="#">Living room</a></li>
-          <li><a href="#">Office</a></li>
-          <li><a href="#">Bedroom</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <a class="bag" href="#"><img src="Bag.png" alt=""></a>
-    </div>
+      <div class="content">
+        <nav>
+          <ul>
+            <li><a id="orange" href="#">Home</a></li>
+            <li><a href="#">Living room</a></li>
+            <li><a href="#">Office</a></li>
+            <li><a href="#">Bedroom</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="bag" href="#" data-count="5"> <img src="Bag.png" alt=""></a>
+      </div>
   </div>
 </header>
 
 <div class="contact">
   <div class="content">
-    <a href="#">contact us</a>
-    <div class="HC"  >
+    <div class=contact-us>
+      <a href="#">contact us</a>
+    </div>
+    <div class="HC">
       <a href="#">HOME /</a>
       <a href="#">CONTACT</a>
     </div>
   </div>
 </div>
+
 </body>
 </html>
