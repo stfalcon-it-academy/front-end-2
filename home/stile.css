@@ -11,6 +11,7 @@ body
 .container
 {
   margin: 0 auto;
+  padding: 0 15px;
   max-width: 1170px;
 }
 
@@ -151,25 +152,9 @@ body
   list-style: none;
 }
 
-.menu li
-{
-  display: inline-block;
-}
-
-.menu li + li
-{
-  margin-left:44px;
-}
-
-@media (max-width: 660px) {
-  .menu li
-  {
-    display: block;
-  }
-  .menu li + li
-  {
-    margin: 0;
-  }
+@media (min-width: 660px) {
+  .menu li { display: inline-block; }
+  .menu li + li { margin-left: 44px; }
 }
 
 .menu a
