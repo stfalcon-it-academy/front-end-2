@@ -202,9 +202,10 @@ body
 @media(max-width: 480px){
   .bag
   {
-    display: inline-block;
-    margin-bottom: 20px;
-    width: 100%;
+    position: relative;
+    display: block;
+    margin: 10px auto 20px;
+    float: none;
 
   }
   .bag:after
@@ -212,7 +213,7 @@ body
     margin-bottom: 20px;
     position: relative;
     top: -10px;
-    right: -215px;
+    right: -8px;
 
   }
 
