@@ -24,6 +24,7 @@ font-family: 'Lato', sans-serif;
 */
 
 header {
+
   box-sizing: border-box;
   height: 116px;
   border-bottom: 4px solid #f0f0f0;
@@ -38,7 +39,6 @@ header {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 0;
 }
 
 .header-nav li {
@@ -50,17 +50,27 @@ header {
   margin-right: 0;
 }
 
-input[type=search] {
-  display: none;
+.header-search {
+  border: none;
+  background-color: #f0f0f0;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  transition: all .3s ease;
+  outline: none;
 }
 
-/*
-
-.search a {
-
+.search-img i {
+  font-size: 14px;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
-*/
+.header-search:focus {
+  display: inline-block;
+  width: 160px;
+}
 
 .header-nav a {
   position: relative;
@@ -76,6 +86,7 @@ input[type=search] {
 .header-nav a:hover {
   background-color: #f0f0f0;
 }
+
 
 .header-nav a.current::before {
   content: '';
@@ -158,6 +169,7 @@ input[type=search] {
 }
 
 .service-item .item-icon {
+  display: inline-block;
   margin-bottom: 26px;
   width: 196px;
   font-size: 68px;
@@ -165,7 +177,6 @@ input[type=search] {
   background-color: #dc464e;
   border-radius: 100%;
   border: 16px solid #f0f0f0;
-  text-align: center;
   line-height: 164px;
   transition: all .15s ease;
 }
@@ -237,4 +248,136 @@ input[type=search] {
 .works-filter a:hover {
   border-color: currentColor;
   color: #e84a52;
+}
+
+.works-container {
+  margin: 56px 392px 0;
+}
+
+.works-container li {
+  position: relative;
+  margin: 0;
+  width: 25%;
+  display: inline-block;
+}
+
+.works-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.work-overlay {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 22px 22px 80px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.works-container li:hover .work-overlay {
+  display: inline-block;
+}
+
+.work-info {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -70%);
+}
+
+.works-container .work-title {
+  color: #f1f1f1;
+  font: 700 15px/1.5 'Roboto', sans-serif;
+}
+
+.works-container .work-description {
+  color:  #ebebeb;
+  font: 400 13px/1.35 'Roboto', sans-serif;
+}
+
+.work-link {
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  width: 100%;
+}
+
+.works-container a {
+  bottom: 0;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  line-height: 31px;
+}
+
+.works-container a + a {
+  margin-left: 14px;
+}
+
+.works-container i {
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.works-container a:hover {
+  color: #e84a52;
+  border-color: currentColor;
+}
+
+.purchase-container {
+  padding: 42px 0;
+  background-color: #128abc;
+}
+
+.purchase-content,
+.purchase-wrap {
+  padding: 0 50px;
+}
+
+.purchase-content {
+  text-align: left;
+}
+
+.purchase-title {
+  color: white;
+  font: 300 28px/1.0714 'Roboto', sans-serif;
+  letter-spacing: -0.017em;
+}
+
+.purchase-description {
+  font: 300 16px/1.875 'Roboto', sans-serif;
+  letter-spacing: -0.01em;
+  color: white;
+}
+
+.purchase-wrap {
+  text-align: right;
+}
+
+.purchase-btn {
+  background-color: transparent;
+  color: white;
+  padding: 20px 28px;
+  font: 400 14px/2.1428 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: all 0.15s ease;
+}
+
+.purchase-btn:hover {
+  background-color: white;
+  text-decoration: none;
+  color: #000;
 }
