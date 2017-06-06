@@ -138,7 +138,7 @@ body {
   padding: 10px;
   background:  url(../images/icon-bag.png) center center no-repeat;
   margin-top: 16px;
-  }
+}
 
 .header-cart:after {
   position: relative;
@@ -153,6 +153,7 @@ body {
   line-height: 18px;
   background-color: #be926f;
   font-size: 12px;
+  color: #232323;
 }
 
 .body-page {
@@ -190,13 +191,13 @@ body {
   text-decoration: none;
   font-size: 14px;
   line-height: 24px;
-  }
+}
 
 .contact-home a:last-child {
   color: #666666;
 }
 
-@media (max-width: 730px) and (min-width: 320px) {
+@media (max-width: 730px) {
   .container {
     display: flex;
     justify-content: space-between;
@@ -214,13 +215,15 @@ body {
     margin: 20px;
   }
 
-  .header-nav ul {
-    width: 85%;
+  .header-nav a {
+    display: inline-block;
+    width: 100%;
+    padding: 0 15px;
   }
 
-  .header-nav li {
-    display: block;
-    width: 85%;
+  .header-nav li{
+    display: inline-block;
+    width: 90%;
   }
 
   .header-nav li + li {
