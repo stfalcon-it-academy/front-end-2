@@ -1,5 +1,5 @@
 html {
-  font-family: Arial;
+  font-family: 'Arial';
   }
 
 body {
@@ -19,7 +19,7 @@ li {
   counter-increment: list;
   position: relative;
   list-style: none;
-  padding: 10px 3px;
+  padding: 10px 15px;
   vertical-align: middle;
 }
 
@@ -28,10 +28,11 @@ li:nth-child(odd){
 }
 
 li:before {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  padding: 20px 0;
-  left: -50px;
+  left: -40px;
   text-align: center;
   vertical-align: middle;
   line-height: 1.333;
@@ -39,18 +40,18 @@ li:before {
   height: 100%;
   font-size: 24px;
   color: #ffffff;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   content: counter(list);
   top: 0;
-  font-family: "Times New Roman";
+  font-family: 'Times New Roman';
 }
 
 li:nth-child(2n-1):before {
-  background: #cc4242;
+  background-color: #cc4242;
 }
 
 li:nth-child(2n):before {
-  background:#ff5353;
+  background-color:#ff5353;
 }
 
 li:first-child:before{
