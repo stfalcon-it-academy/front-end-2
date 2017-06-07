@@ -1,0 +1,51 @@
+body{
+margin: 0;
+}
+
+div{
+  width: 100%;
+}
+
+li:nth-child(odd){
+  background: #cccccc;
+}
+
+li {
+  counter-increment: count;
+  position: relative;
+  padding: 10px 0;
+  list-style: none;
+  font-size: 14px;
+  right: -10px;
+}
+
+ol {
+  counter-reset: count;
+}
+
+ol li:before {
+  content: counter(count);
+}
+
+li:before {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -50px;
+  top: 0px;
+  bottom: 0px;
+  width: 50px;
+  height: 100%;
+  font-size: 30px;
+  color: #ffffff;
+  content: counter(my-counter);
+}
+
+li:nth-child(2n-1):before{
+  background: #cc4242;
+}
+li:nth-child(2n):before {
+    background:#ff5353;
+}
+
