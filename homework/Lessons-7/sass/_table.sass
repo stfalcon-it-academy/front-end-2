@@ -1,0 +1,27 @@
+.table-list
+	display: table
+	width: 100%
+	counter-reset: numb
+
+.table-list-row
+	display: table-row
+	counter-increment: numb
+	&::before
+		display: table-cell
+		content: counter(numb)
+		vertical-align: middle
+		padding: 0 20px
+		text-align: center
+		font-size: 24px
+		background: #ff5353
+		color: #fff
+		text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5)
+	&:nth-child(odd)::before
+		background: #cc4242
+	&:nth-child(odd)
+		background-color: #cccccc
+
+.table-list-cell
+	display: table-cell
+	vertical-align: middle
+	padding: 15px
