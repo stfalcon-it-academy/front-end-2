@@ -1,0 +1,9 @@
+=font-family--($name: Regular, $size: 14px, $lineheight: 1.5) // Regular, Light, SemiBlold
+	font: #{$size}/#{$lineheight} "Montserrat-#{$name}", sans-serif
+
+=clearfix
+	&:after
+		content: " "
+		display: table
+		clear: both
+	*zoom: 1
