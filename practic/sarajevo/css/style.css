@@ -1,0 +1,661 @@
+html {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container-s {
+  width: 1170px;
+  margin: auto;
+}
+
+.header {
+  height: 700px;
+  background-image: url(../images/background-image.jpg);
+}
+
+.menu-upline {
+  height: 1px;
+}
+
+.purple-line {
+  background-color: rgba(16, 22, 54,0.2);
+  width: 100%;
+  height: 52px;
+  text-align: center;
+  /*position: fixed;*/
+  /*margin-top: 0;*/
+  }
+
+.sarajevo {
+  width: 100px;
+  font-size: 20.8px;
+  font-family: "Lato";
+  color: #ffffff;
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: left;
+  letter-spacing: 0.5px;
+  margin-top: 18px;
+  padding-left: 100px;
+}
+
+.sarajevo span {
+  color: #4c76ff;
+}
+
+.tag-line {
+  margin-top: -20px;
+  font-size: 14px;
+  font-family: "Lato";
+  font-weight: 100;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.302);
+  line-height: 1.2;
+  padding-top: 1px;
+  width: 540px;
+  }
+
+.tag-line span {
+  color: #4c76ff;
+  opacity: 0.8 ;
+  padding: 0 20px;
+}
+
+.header-menu {
+  list-style: none;
+  padding-left: 670px;
+  margin-top: -22px;
+}
+
+.header-menu li {
+  display: inline-block;
+}
+
+.header-menu a{
+  font-size: 12px;
+  font-family: "Lato";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  Padding: 0 14px;
+  margin: 0;
+}
+
+.logo {
+  font-size: 62px;
+  font-family: "Lato";
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 227px;
+  padding-left: 60px;
+}
+
+.logo span {
+  color: #4c76ff;
+}
+
+.creative {
+  font-size: 48px;
+  font-family: "Lato";
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.creative span {
+  color: #4c76ff;
+  letter-spacing: 0.2px;
+}
+
+.we {
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.902);
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.6px;
+  padding-top: 18px;
+}
+
+.we span {
+  width: 28px;
+  height: 1px;
+  background: #4c76ff;
+  display: inline-block;
+  margin: 5px 30px;
+}
+
+.social {
+  margin: 95px;
+  text-align: center;
+}
+
+.social a i {
+  color: rgba(255,255,255,0.30);
+  margin: 0 5px;
+}
+
+.social a i:hover {
+  color: #fff;
+  transition: all 0.5s;
+}
+
+/*------------------------FEATURES-------------------------*/
+.features-back {
+  background-color: #efefef;
+}
+
+.features {
+  height: 435px;
+  width: 1170px;
+  }
+
+.features-title {
+  font-size: 28px;
+  font-family: "Lato";
+  font-weight: 900;
+  color: rgb(76, 118, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 71px;
+}
+
+.heart {
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.features-icon {
+  height: 34px;
+  width: 34px;
+  }
+
+.features-col {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 78px 80px 0 75px;
+}
+
+.leftside {
+  width: 20%;
+  float: left;
+  text-align: center
+}
+.righttside {
+  width: 80%;
+  float: left;
+}
+
+.righttside p {
+  font-size: 10.9px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: rgba(6, 32, 51, 0.702);
+  line-height: 1.615;
+  padding-top: 1px;
+}
+
+.righttside h3 {
+  font-size: 16.7px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: rgb(6, 32, 51);
+  line-height: 1.2;
+  text-align: left;
+  letter-spacing: -0.2px;
+  margin-top: 0px;
+}
+
+/*---------------------------IPHONE------------------*/
+.iphone {
+  height: 800px;
+  background-color: #ffffff;
+}
+
+.iphone-title {
+  font-size: 15.08px;
+  font-family: "Open Sans";
+  padding-top: 76px;
+  padding-left: 5px;
+  color: rgb(40, 37, 40);
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+
+.iphone-content {
+  display: flex;
+  justify-content: space-around;
+   padding: 65px 99px 0;
+
+}
+
+.iphone-content .blocks {
+  padding: 40px 0;
+}
+
+.iphone-content .blocks:hover {
+  background-color: #fefce9;
+}
+
+.iphone-content i {
+  font-size: 40px;
+  font-family: "Pe-icon-7-stroke";
+  color: rgba(40, 37, 40, 0.4);
+  line-height: 0.45;
+  float: left;
+  margin: 15px 0 50px 0;
+  }
+
+.iphone-content .blocks i:hover {
+  font-size: 45px;
+  color: #2b282b;
+}
+
+.Accusan-timar {
+  font-size: 13.4px;
+  font-family: "Open Sans";
+  color: rgb(40, 37, 40);
+  font-weight: bold;
+  line-height: 1.125;
+}
+
+.iphone-content .leftside {
+  text-align: left;
+  width: 20%;
+}
+
+.iphone-content .rightside {
+  width: 80%;
+  padding: 0 45px;
+}
+
+.iphone-content .rightside p {
+  font-size: 10.89px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: rgb(40, 37, 40);
+  line-height: 1.846;
+  text-align: left;
+  width: 220px;
+  padding-top: 15px;
+}
+
+
+/*------------------------WORKS---------------------------*/
+
+.works {
+  height: 848px;
+  background-color: #ffffff;
+  }
+
+.works-title {
+  font-size: 28px;
+  font-family: "Lato";
+  font-weight: 900;
+  color: rgb(76, 118, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 81px;
+  padding-left: -12px;
+}
+
+.works-title2 {
+  font-size: 14px;
+  font-family: "Lato";
+  font-weight: 100;
+  color: rgba(6, 32, 51, 1);
+  line-height: 1.268;
+  text-align: center;
+  padding-top: 41px;
+}
+
+.filter ul {
+  list-style: none;
+  text-align: center;
+  padding: 77px 20px 0;
+  }
+
+.filter li {
+  display: inline-block;
+  height: 30px;
+  }
+
+.filter span {
+    font-size: 14px;
+  font-family: "Lato";
+  font-weight: 900;
+  color: rgb(6, 32, 51);
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  padding: 6px 20px;
+
+  }
+
+.filter span:hover {
+  border-radius: 6px;
+  background-color: rgb(76, 118, 255);
+  color: #ffffff;
+  text-decoration: none;
+}
+.works-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.works-wrapper {
+  height: 220px;
+  width: 295px;
+}
+
+/*-----------------------------TEAM---------------------------*/
+.our-team {
+  height: 765px;
+  }
+
+.team-title {
+  font-size: 28px;
+  font-family: "Lato";
+  font-weight: 900;
+  color: rgb(76, 118, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.team-title2 {
+  font-size: 15px;
+  font-family: "Lato";
+  font-weight: 300;
+  color: rgb(6, 32, 51);
+  line-height: 1.333;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.team-content {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 120px;
+}
+
+.teamman {
+  width: 225px;
+  margin: 0 -10px;
+}
+
+.teammen-name{
+  font-size: 15px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: rgb(6, 32, 51);
+  line-height: 1.333;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.teammen-name span {
+  font-size: 11px;
+  font-family: "Open Sans";
+  color: rgba(6, 32, 51, 0.561);
+  line-height: 1.846;
+  text-align: center;
+}
+
+.figure:hover {
+  background: rgba(76, 118, 255, .9);
+  color: #fff;
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+/*----------------------FUN FACTS-----------------*/
+.fun-back {
+  background-image: url(../images/Layer28.jpg);
+  background-color: rgba(6, 32, 51, 0.8);
+}
+
+.fun {
+  width: 1170px;
+  height: 448px;
+}
+
+.purple-overlay {
+  width: 100%;
+  height: 448px;
+  background-color: rgba(6, 32, 51, 0.8);
+}
+
+.fun-title {
+  font-size: 20px;
+  font-family: "Lato";
+  font-weight: 900;
+  color: #4c76ff;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 15px;
+}
+
+.heart-little {
+  width: 170px;
+  height: 10px;
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  margin: auto;
+}
+
+.fun-icon {
+  height: 96px;
+  width: 96px;
+  color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: rgba(255, 255, 255, 0.4);
+  padding-top: 30%;
+  }
+
+.fun-content ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 88px;
+}
+
+.fun-content li {
+  list-style: none;
+  font-size: 13px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 15px;
+  display: block;
+ }
+
+.fun-content li span {
+  font-size: 45px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  }
+
+
+/*------------------------------CONTACT------------------------------------*/
+.contact {
+  background-color: #ffffff;
+  height: 575px;
+}
+
+.contact-title {
+  font-size: 28px;
+  font-family: "Lato";
+  font-weight: 900;
+  color: rgb(76, 118, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 75px ;
+}
+
+.contact-title2 {
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 200;
+  color: rgb(6, 32, 51);
+  line-height: 1.333;
+  text-align: center;
+  padding-top: 55px;
+}
+
+.contact-content {
+  padding-top: 75px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.adress-title {
+  font-size: 18.35px;
+  font-family: "Open Sans";
+  color: rgb(6, 32, 51);
+  line-height: 1.455;
+}
+
+adress {
+  font-size: 10.84px;
+  font-family: "Open Sans";
+  color: #d1d3d5;
+  line-height: 1.455;
+}
+
+/*------------------------------ MAP------------------------------*/
+
+.map iframe {
+  width: 100%;
+  height: 185px;
+  }
+
+
+
+
+/*------------------------------------FOOTER----------------------------*/
+
+.footer {
+  height: 250px;
+  background-color: #010305;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 160px 0;
+}
+
+.footer-logo {
+  width: 125px;
+  height: 30px;
+}
+
+.footer-first-block {
+  width: 250px;
+}
+
+.footer-first-block p {
+  font-size: 12.4px;
+  font-family: "Lato";
+  font-weight: 100;
+  color: rgb(255, 255, 255);
+  line-height: 1.846;
+  text-align: left;
+}
+
+.footer-second-block {
+  width: 250px;
+}
+
+.footer-second-block .block-title {
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 35px;
+}
+
+.footer-second-block span {
+  font-size: 11.7px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  line-height: 1.846;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.footer-second-block input {
+  width: 100%;
+  background: none;
+  border: 2px solid #fff;
+  padding: 7px;
+  background: url(../images/footarrow.png) no-repeat 95% center;
+}
+
+.footer-third-block .block-title {
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 35px;
+}
+
+
+.footer-third-block {
+  width: 250px;
+  height: 100px;
+  display: block;
+}
+
+.footer-third-block ul {
+  list-style: none;
+  margin-left: -40px;
+  margin-top: -10px;
+  }
+
+.footer-third-block a {
+  text-decoration: none;
+  font-size: 11.6px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  line-height: 2.462;
+  text-align: left;
+  padding-right: 50px;
+}
+
+.footer-third-block table {
+  width: 100%;
+  border-spacing: 7px 50px;
+
+}
