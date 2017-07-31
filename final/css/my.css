@@ -1,0 +1,13 @@
+body {
+  background-color: #f1f1f1;
+  font-size: 22px;
+  line-height: 1.5; }
+
+input, textarea {
+  background-color: #222; }
+
+.kurwa {
+  max-width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+  background: #222; }
