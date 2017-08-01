@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/screen.css">
+</head>
+<body>
+	<div class="container text-center">
+		<div class="panel panel-default" id="panel">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<span id="formulaVarA">a</span>x<sup>2</sup>+<span id="formulaVarB">b</span>x+<span id="formulaVarC">c</span>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<form name="discriminant" class="form-inline" role="form" onsubmit="return checkForm(this.elements)">
+					<div class="form-group" id="formInputA">
+						<input type="number" class="form-control" name="inputVarA" id="inputVarA" placeholder="A" autocomplete="off" value="">
+					</div>
+					<div class="form-group" id="formInputB">
+						<input type="number" class="form-control" name="inputVarB" id="inputVarB" placeholder="B" autocomplete="off" value="">
+					</div>
+					<div class="form-group" id="formInputC">
+						<input type="number" class="form-control" name="inputVarC" id="inputVarC" placeholder="C" autocomplete="off" value="">
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn-primary" onclick="btnResultDisc(inputVarA.value, inputVarB.value, inputVarC.value)">Результат</button>
+						<button type="reset" class="btn btn-danger" onclick="btnResultReset()">X</button>
+					</div>
+				</form>
+			</div>
+			<div class="panel-footer" id="result"></div>
+		</div>
+	</div>
+	<script src="js/common.js"></script>
+</body>
+</html>

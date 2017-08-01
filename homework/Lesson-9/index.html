@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/screen.css">
+</head>
+<body>
+	<header>
+		<div class="header-panel">
+			<div class="container">
+				<a href="tel:12345678" class="header-panel-phone">(+123) 456 789</a>
+				<div class="header-panel-login">
+					<a href="#">Log in</a>
+					<span>or</span>
+					<a href="#">Register</a>
+				</div>
+			</div>
+		</div>
+		<div class="header">
+			<div class="container">
+				<div class="header-middle">
+					<a href="#" class="header-middle-logo">
+						<img src="images/logo.png" width="166px" height="49px" alt="Logo">
+					</a>
+					<form action="#" method="get" class="header-middle-search">
+						<input type="search" placeholder="Search Products...">
+						<button type="submit"></button>
+					</form>
+				</div>
+				<a href="#" class="header-bag" data-count="9"></a>
+				<nav>
+					<ul class="header-nav">
+						<li><a href="#" class="active">Home</a></li>
+						<li><a href="#">Living room</a></li>
+						<li><a href="#">Office</a></li>
+						<li><a href="#">Bedroom</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+
+				<a onclick="$('#mobile-nav').slideToggle('slow');" class="header-hamburger" href="javascript://"></a>
+				<div id="mobile-nav" style="display: none;">
+					<nav>
+						<ul class="header-nav header-hamburger-mobile">
+							<li><a href="#" class="active">Home</a></li>
+							<li><a href="#">Living room</a></li>
+							<li><a href="#">Office</a></li>
+							<li><a href="#">Bedroom</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+		</div>
+	</header>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</body>
+</html>

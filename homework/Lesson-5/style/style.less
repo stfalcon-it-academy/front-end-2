@@ -1,0 +1,185 @@
+// Main vars
+@font-size-default: 15px;
+@background-color: #fff; // Default, white
+// @background-color: #ffeeef; // red
+// @background-color: #fffeee; // yellow
+// @background-color: #efffee; // green
+// @background-color: #eeefff; // blue
+
+// Font vars
+// Size
+@font-size-title: 1.6rem;
+@font-lineheight-default: 1.55rem;
+// Color
+@font-text-color: darken(@background-color, 80%);
+@font-title-color: darken(@font-text-color, 20%);
+@font-secondary-color: lighten(@font-text-color, 20%);
+// Family
+@font-regular: ~"'Montserrat', sans-serif";
+@font-light: ~"'Montserrat-Light', sans-serif";
+
+// Color element
+@background-article-color: darken(@background-color, 2%);
+
+// Media screen
+@desktop: ~"only screen and (min-width: 1024px)";
+@desktop-area: 50%;
+
+@tablet: ~"only screen and (min-width: 768px) and (max-width: 1023px)";
+@tablet-area: 70%;
+
+@mobile: ~"only screen and (min-width: 320px) and (max-width: 767px)";
+@mobile-area: 80%;
+// end vars //
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: @font-light;
+	font-size: @font-size-default;
+	background-color: @background-color;
+	color: @font-text-color;
+}
+
+div.container {
+	width: 100%;
+	height: 100%;
+}
+
+article.fullstory-wrap {
+	padding: 30px;
+	margin: 0 auto;
+	background-color: @background-article-color;
+	color: @font-text-color;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+	&>h1 {
+		font-family: @font-regular;
+		font-size: @font-size-title;
+		color: @font-title-color;
+		text-transform: capitalize;
+	}
+}
+
+div.fullstory-footer-panel {
+	padding-bottom: 1.35rem;
+	&>ul {
+		display: block;
+		list-style: none;
+		&>li {
+			display: inline-block;
+			&>span {
+				color: @font-secondary-color;
+			}
+			&:after {
+				content: "|";
+				color: #999999;
+				margin: 0 1.5rem;
+			}
+			&:last-child:after {
+				content: none;
+				margin: 0;
+			}
+		}
+	}
+}
+
+div.fullstory-text {
+	margin: 1.6rem 0 0 0;
+	line-height: @font-lineheight-default;
+	&>p {
+		text-align: justify;
+		padding-bottom: 1.55rem;
+		&+ p {
+			padding-bottom: 1.55rem;
+		}
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+}
+
+a.btn {
+ display: inline-block;
+ position: relative;
+ padding-top: 1rem;
+ margin-right: 1rem;
+ &> span {
+ 	display: block;
+ 	border-radius: 4px;
+ 	width: 30px;
+ 	height: 30px;
+ }
+ &:last-child {
+ 	margin-right: 0;
+ }
+}
+
+a.btn-default {
+	&> span {
+		background-color: gray;
+		&:hover {
+			border: 1px solid darken(gray, 20%);
+			transition: 0.3s;
+		}
+	}
+}
+
+a.btn-red {
+	&> span {
+		background-color: red;
+	}
+}
+
+a.btn-yellow {
+	&> span {
+		background-color: yellow;
+	}
+}
+
+a.btn-green {
+	&> span {
+		background-color: green;
+	}
+}
+
+a.btn-blue {
+	&> span {
+		background-color: blue;
+	}
+}
+
+@media @desktop {
+	article.fullstory-wrap {
+		width: @desktop-area;
+		margin: 15vh auto;
+	}
+}
+
+@media @tablet {
+	article.fullstory-wrap {
+		width: @tablet-area;
+		margin: 5vh auto;
+	}
+}
+
+@media @mobile {
+	article.fullstory-wrap {
+		width: @mobile-area;
+		margin: auto;
+	}
+	div.fullstory-footer-panel > ul > li {
+		display: block;
+		padding-bottom: .8rem;
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+	div.fullstory-footer-panel > ul > li:after {
+		content: none;
+	}
+}

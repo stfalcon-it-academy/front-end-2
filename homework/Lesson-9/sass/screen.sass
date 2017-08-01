@@ -1,0 +1,183 @@
+@import "normalize"
+@import "_fonts"
+// Montserrat: 200, 300, 400, 600
+
+
+// ************ VARIABLES ************
+// Fonts
+$base-font-size: 15
+$mobile-font-size: 18
+//____________ VARIABLES ____________
+
+
+// ************ FUNCTION ************
+// Px to Em
+@function em($pixel, $context: $base-font-size)
+	@return #{$pixel/$context}em
+//____________ FUNCTION ____________
+
+
+// ************ MIXINS ************
+=font($weight: 300, $size: $base-font-size, $lineheight: 2)
+	font: $weight em($size)/$lineheight 'Montserrat', sans-serif
+
+=clearfix
+	&:after
+		content: ''
+		display: table
+		clear: both
+//____________ MIXINS ____________
+
+
+// ************ BASE ************	
+html
+	font-size: $base-font-size + px
+	@media (max-width: 480px)
+		font-size: $mobile-font-size + px
+
+body
+	margin: 0
+	padding: 0
+	min-width: 310px
+
+a
+	text-decoration: none
+
+.container
+	margin: 0 auto
+	padding: 0 15px
+	max-width: 1170px
+	box-sizing: border-box
+//____________ BASE ____________
+
+
+// ************ START HEADER-PANEL ************
+.header-panel
+	+font(300,14,1.7)
+	background: #2b2b2b
+	padding: 10px 0
+	+clearfix
+	@media (max-width: 480px)
+		text-align: center
+	// ---------------------------------
+	&-phone
+		float: left
+		color: #7f7f7f
+		@media (max-width: 480px)
+			float: none
+			padding: 5px 15px
+		&:hover
+			text-decoration: underline
+	// ---------------------------------
+	&-login
+		float: right
+		@media (max-width: 480px)
+			float: none
+		a
+			color: #666
+			@media (max-width: 480px)
+				padding: 5px 15px
+				line-height: 2.5
+			&:hover
+				text-decoration: underline
+		span
+			font-size: em(12)
+			color: #3b3b3b
+			margin: 0 12px
+			@media (max-width: 480px)
+				margin: 0
+// ############ END HEADER-PANEL ############
+
+
+// ************ START HEADER ************
+.header
+	background: #232323
+	+clearfix
+	//---------------------------------
+	&-middle
+		padding-top: 33px
+		+clearfix
+		@media (max-width: 480px)
+			text-align: center
+		//---------------------------------
+		&-logo
+			float: left
+			@media (max-width: 480px)
+				float: none
+				display: inline-block
+				width: 100%
+				margin-bottom: 20px
+		//---------------------------------
+		&-search
+			float: right
+			border: 1px solid #323232
+			height: 44px
+			@media (max-width: 480px)
+				display: inline-block
+				float: none
+			input
+				display: inline-block
+				background-color: transparent
+				font-size: em(13)
+				border: none
+				vertical-align: top
+				line-height: 44px
+				padding: 0 0 0 25px
+				color: white
+				&:focus
+					outline: none
+			button
+				display: inline-block
+				width: 54px
+				height: 44px
+				border: none
+				background: transparent url(../css/images/search.png) center center no-repeat
+				&:focus
+					outline: none
+	//---------------------------------
+	&-bag
+		float: right
+		width: 17px
+		height: 22px
+		padding: 10px
+		background: transparent url(../css/images/bag.png) center center no-repeat
+		color: #232323
+		margin-top: 20px
+		&::after
+			position: relative
+			display: inline-block
+			content: attr(data-count)
+			top: -18px
+			right: -9px
+			width: 18px
+			height: 18px
+			line-height: 18px
+			border-radius: 100%
+			background: #be962f
+			font-size: em(12)
+			text-align: center
+	//---------------------------------
+	&-nav
+		padding: 20px 0 40px
+		margin: 0
+		list-style: none
+		margin-left: -15px
+		@media (max-width: 735px)
+			column-count: 3
+		@media (max-width: 535px)
+			column-count: 2
+		@media (max-width: 395px)
+			column-count: 1
+		li
+			display: inline-block
+			@media (max-width: 735px)
+				display: block
+		a
+			display: inline-block
+			+font(300,16,1.5)
+			color: #f0f0f0
+			padding: 10px 22px
+			&:hover,
+			&.active
+				color: #be926f
+// ############ END HEADER ############

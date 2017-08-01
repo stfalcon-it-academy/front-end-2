@@ -1,0 +1,27 @@
+.flex-list
+	display: flex
+	flex-direction: column
+	list-style: none
+	padding: 0
+	margin: 0
+	counter-reset: li
+	li
+		display: inline-flex
+		&::before
+			content: counter(li)
+			counter-increment: li
+			display: inline-flex
+			align-items: center
+			padding: 0 20.5px
+			justify-content: center
+			font-size: 24px
+			background: #ff5353
+			color: #fff
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5)
+	p
+		margin: 0
+		padding: 15px
+	li:nth-child(odd)::before
+		background: #cc4242
+	li:nth-child(odd)
+		background-color: #cccccc
