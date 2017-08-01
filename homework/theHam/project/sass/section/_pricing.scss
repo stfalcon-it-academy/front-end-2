@@ -1,0 +1,97 @@
+.pricing {
+	margin: 75px 0 0;
+}
+
+.pricing-item {
+	position: relative;
+	border: 1px solid #e1e1e1;
+	border-radius: 4px;
+	text-align: center;
+	overflow: hidden; // крива svg 'offer'
+	@media (max-width: $screen-xs) {
+		margin-bottom: 40px;
+	}
+	h3 {
+		font-size: em(24);
+		font-weight: 700;
+		color: #717171;
+		text-transform: uppercase;
+		margin: 15px 0;
+	}
+}
+
+.pricing-item.active {
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+	h3 {
+		color: $color-primary;
+	}
+	.pricing-item-price {
+		background-color: $color-primary;
+	}
+	.pricing-item-button a {
+		background-color: $color-primary;
+	}
+}
+
+.pricing-item-price {
+	font-size: em(14);
+	font-weight: 300;
+	padding: 25px 0;
+	color: #fff;
+	background-color: #2e4a5b;
+	span {
+		font-size: em(40);
+		font-weight: 700;
+	}
+}
+
+.pricing-item-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	li {
+		border-bottom: 1px solid #e1e1e1;
+		padding: 10px 5px;
+		font-size: em(14);
+		font-weight: 400;
+		color: #777777;
+	}
+}
+
+.pricing-item-button {
+	padding: 20px 0;
+}
+
+.pricing-item.active {
+	& .pricing-item-offer-text {
+		display: block;
+		position: absolute;
+		font-size: em(14);
+		font-weight: 400;
+		color: #fff;
+		top: 11px;
+		right: 0;
+		text-transform: uppercase;
+		transform: rotate(45deg);
+		user-select: none;
+		cursor: default;
+	}
+	svg {
+		position: absolute;
+		display: block;
+		top: -2px;
+		right: 0;
+		fill: #18cfab;
+		width: 60px;
+		height: 62px;
+	}
+}
+
+.pricing-item {
+	& .pricing-item-offer-text {
+		display: none;
+	}
+	svg {
+		display: none;
+	}
+}

@@ -1,0 +1,172 @@
+body {
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+}
+.clearfix {
+  display: block;
+  clear: both;
+}
+.padding-section-default {
+  padding-bottom: 35px;
+}
+a {
+  text-decoration: none;
+}
+header.header-wrapper {
+  height: 200px;
+  width: 100%;
+  background-color: #232323;
+}
+div.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+div.header-panel-top {
+  background-color: #2b2b2b;
+  color: #7f7f7f;
+  line-height: 34px;
+  height: 34px;
+}
+div.phone-number {
+  float: left;
+}
+div.authorization {
+  float: right;
+}
+div.authorization > a {
+  color: #666666;
+}
+div.authorization > span {
+  margin: 0 8px;
+  font-size: 12px;
+  color: #3b3b3b;
+}
+div.header-panel-middle {
+  margin-top: 30px;
+  margin-right: -20px;
+}
+div.header-logo {
+  float: left;
+  width: 165px;
+  height: 50px;
+  background-image: url(../images/logo.png);
+}
+div.header-search {
+  float: right;
+}
+.search {
+  position: relative;
+}
+.search input[type="search"] {
+  font: 13px 'Montserrat-Light', sans-serif;
+  border: none;
+  width: 250px;
+  vertical-align: middle;
+  padding: 12px 40px 12px 25px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #323232;
+  background-color: #232323;
+  color: #ffffff;
+  outline: none;
+}
+.search input[type="search"]::placeholder {
+  font-family: 'Montserrat-Light', sans-serif;
+  color: #666666;
+}
+input[type="image"] {
+  left: -30px;
+  position: relative;
+  vertical-align: middle;
+  width: 18px;
+  outline: none;
+}
+nav.header-navigation {
+  float: left;
+  font-size: 16px;
+  margin-top: 15px;
+}
+nav.header-navigation > ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+nav.header-navigation > ul > li {
+  display: inline-block;
+  padding-right: 40px;
+}
+nav.header-navigation > ul > li > a {
+  color: #ffffff;
+}
+nav.header-navigation > ul > li > a:hover {
+  color: #be926f;
+}
+nav.header-navigation > ul > li:last-child {
+  padding-right: 0;
+}
+div.header-order {
+  float: right;
+  margin-top: 35px;
+}
+div.order-icon {
+  position: relative;
+  width: 17px;
+  height: 22px;
+  margin-right: 10px;
+  background: url(../images/icons/bag.png) no-repeat;
+}
+div.order-icon > span {
+  position: absolute;
+  width: 19px;
+  height: 18px;
+  line-height: 18px;
+  background-color: #be926f;
+  color: #232323;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 100%;
+  top: -10px;
+  right: -12px;
+}
+.article-title {
+  position: relative;
+  height: 115px;
+  line-height: 115px;
+  padding: 0 30px;
+  background-color: #e7e7e7;
+}
+.article-title > h1 {
+  display: inline;
+  text-transform: uppercase;
+}
+.speedbar {
+  display: inline-block;
+  float: right;
+}
+.speedbar > ul {
+  display: block;
+  margin: 0;
+}
+.speedbar > ul > li {
+  display: inline-block;
+  list-style: none;
+  text-transform: uppercase;
+}
+.speedbar > ul > li > a {
+  color: #999999;
+}
+.speedbar > ul > li.active > a {
+  font-weight: bold;
+  color: #666666;
+}
+.speedbar > ul > li:after {
+  content: " /";
+  margin: 0 5px;
+  color: #999999;
+}
+.speedbar > ul > li:last-child:after {
+  content: none;
+}
