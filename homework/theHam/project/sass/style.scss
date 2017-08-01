@@ -1,0 +1,95 @@
+@import "plugin/_normalize.scss";
+@import "plugin/_fonts.scss";
+@import "plugin/_font-awesome.scss";
+@import "plugin/_bootstrap-grid.scss";
+@import "plugin/_slick.scss";
+@import "plugin/_slick-theme.scss";
+@import "plugin/_responsive-tabs.scss";
+@import "plugin/_animate.scss";
+
+$font-size-base: 18;
+$font-family: 'Montserrat';
+
+$color-primary: #18cfab;
+
+@function em($pixel, $context: $font-size-base) {
+	@return #{$pixel/$context}em;
+}
+
+
+/* Base style */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: $font-size-base + px;
+}
+
+body {
+	font: 300 em($font-size-base)/1.5 $font-family, sans-serif;
+	//overflow-X: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+.text {
+	&-left {
+		text-align: left;
+	}
+	&-right {
+		text-align: right;
+	}
+	&-center {
+		text-align: center;
+	}
+}
+
+.animated {
+	@media (max-width: $screen-xs) {
+		transition-property: none !important;
+		transform: none !important;
+		animation: none !important;
+	}
+}
+
+
+/* Compontents */
+@import "components/_title.scss";
+@import "components/_button.scss";
+
+/* Section */
+@import "section/_header.scss";
+@import "section/_slider.scss";
+@import "section/_about.scss";
+@import "section/_features.scss";
+@import "section/_company.scss";
+@import "section/_news.scss";
+@import "section/_pricing.scss";
+@import "section/_fact.scss";
+@import "section/_team.scss";
+@import "section/_purchase.scss";
+@import "section/_theme.scss";
+@import "section/_footer.scss";
+@import "section/_work.scss";
+@import "section/_contact.scss";
+@import "section/_reviews.scss";
+@import "section/_services.scss";
+
+
+.theme,
+.purchase {
+	@media (max-width: $screen-sm) {
+		padding: 40px 30px;
+		margin-top: 40px;
+	}
+}
+
+.footer {
+	@media (max-width: $screen-sm) {
+		padding: 40px 0;
+		margin-top: 40px;
+	}
+}

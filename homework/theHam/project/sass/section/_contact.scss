@@ -1,0 +1,76 @@
+.contact {
+	margin-top: 100px;
+	& .section-title {
+		margin-top: 0;
+		@media (max-width: $screen-md) {
+			margin-top: 40px;
+		}
+	}
+}
+
+.contact-form {
+	margin-top: 75px;
+	@media (max-width: $screen-sm) {
+		margin-top: 30px;
+	}
+	& label.error {
+		display: inline-block;
+		padding: 10px 0 0;
+		color: lighten(red, 15%);
+		font-size: em(14);
+		&::before {
+			content: '\f071';
+			font-family: 'FontAwesome';
+			margin-right: 5px;
+		}
+	}
+	& .btn {
+		cursor: pointer;
+	}
+}
+
+.form-group {
+	position: relative;
+	padding: 10px 0;
+}
+
+.form-control {
+	padding: 15px 20px;
+	width: 100%;
+	outline: none;
+	border: 1px solid #d7e2e0;
+	color: #2f2f2f;
+	resize: vertical;
+	font-size: em(16);
+	font-weight: 300;
+	transition: all .3s;
+	&::placeholder {
+		font-size: em(16);
+		font-weight: 300;
+		color: #90aebd;
+	}
+	&.error {
+		transition: all .3s;
+		border: 1px solid lighten(red, 25%);
+	}
+	&.valid {
+		transition: all .3s;
+		border: 1px solid $color-primary;
+	}
+}
+
+.contact-iframe {
+	height: 520px;
+	width: 100%;
+	@media (max-width: $screen-xs) {
+		height: 300px;
+	}
+}
+
+.contact-map {
+	@media (min-width: $screen-md) {
+		position: absolute;
+		left: 0;
+		width: 49%;
+	}
+}

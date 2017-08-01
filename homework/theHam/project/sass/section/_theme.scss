@@ -1,0 +1,77 @@
+.theme {
+	background: #40474b url('../img/theme/theme-bg.jpg') no-repeat center center;
+	background-origin: border-box;
+	background-size: cover;
+	color: #d8d8d8;
+	position: relative;
+	margin-top: 100px;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.theme-title {
+	padding: 0 30px;
+	h2 {
+		font-size: em(50);
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #fff;
+		margin: 0;
+		@media (max-width: $screen-sm) {
+			font-size: em(32);
+		}
+	}
+	h3 {
+		font-size: em(47);
+		font-weight: 400;
+		margin: 0 0 75px 0;
+		text-transform: uppercase;
+		color: #18cfab;
+		@media (max-width: $screen-sm) {
+			font-size: em(25);
+		}
+	}
+}
+
+.theme-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 70px;
+	text-align: left;
+	li {
+		display: block;
+		font-size: em(14);
+		font-weight: 300;
+		line-height: 40px;
+		color: #f7f7f7;
+		svg {
+			width: 24px;
+			vertical-align: middle;
+			margin-right: 20px;
+			height: 24px;
+			fill: #18cfab;
+		}
+	}
+}
+
+.theme-inner-image {
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	width: 43%;
+	img {
+		position: absolute;
+		max-width: 100%;
+		transform: translate(-25%, -100%);
+	}
+	@media (max-width: $screen-md) {
+		display: none;
+	}
+}
+
+.theme-button {
+	text-align: left;
+	@media (max-width: $screen-sm) {
+		text-align: center;
+	}
+}

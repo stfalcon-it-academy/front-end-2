@@ -1,0 +1,88 @@
+.services {
+	margin-top: 75px;
+}
+
+.services-tab {
+	list-style: none;
+	padding: 0;
+	font-size: 0;
+	@include clearfix;
+	@media (max-width: $screen-sm) {
+		padding: 0 15px;
+	}
+	li {
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		background-color: #f8fcfe;
+		border: 1px solid #ebebeb;
+		width: 16.66667%;
+		&:hover {
+			background-color: $color-primary;
+			border: 1px solid $color-primary;
+			a {
+				color: #fff;
+			}
+		}
+		@media (max-width: $screen-md) {
+			display: block;
+			float: left;
+			width: 33.33333%;
+		}
+		@media (max-width: $screen-xs) {
+			display: block;
+			float: left;
+			width: 50%;
+		}
+		&.active {
+			background-color: $color-primary;
+			border: 1px solid $color-primary;
+			color: #fff;
+			a {
+				color: #fff;
+			}
+			&::after {
+				content: ''; 
+				position: absolute;
+				left: 50%;
+				bottom: -20px;
+				transform: translateX(-50%);
+				border: 10px solid transparent;
+				border-top: 10px solid $color-primary;
+				@media (max-width: $screen-md) {
+					display: none;
+				}
+			}
+		}
+	}
+	a {
+		display: inline-block;
+		width: 100%;
+		padding: 20px 0;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 40px;
+		color: #717171;
+	}
+}
+
+.services-content-item {
+	margin: 50px 0 0;
+	text-align: center;
+	@media (max-width: $screen-sm) {
+		padding: 0 15px;
+		margin: 50px 0 0;
+	}
+	img {
+		max-width: 100%;
+		margin-top: 5px;
+	}
+	p {
+		color: #777777;
+		text-align: left;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 30px;
+		margin: 0;
+	}
+}
