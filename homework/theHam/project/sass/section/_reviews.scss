@@ -1,0 +1,134 @@
+.reviews {
+	margin-top: 100px;
+	background: #2e404d url('../img/reviews/reviews-bg.jpg') no-repeat center center;
+	background-origin: content-box;
+	background-size: cover;
+	& .slick-current {
+		margin-top: -10px;
+		transition: all .2s;
+	}
+	& .slick-slide {
+		transition: all .2s;
+	}
+	& .slick-list {
+		padding: 20px 0;
+	}
+}
+
+.reviews-slide {
+	outline: none;
+}
+
+.reviews-carusel-slide {
+	outline: none;
+}
+
+.reviews-content {
+	text-align: center;
+	color: #fff;
+	padding: 0 30px;
+	svg {
+		width: 45px;
+		height: 35px;
+		fill: $color-primary;
+		margin-top: 65px;
+	}
+	p {
+		font-size: em(16);
+		font-weight: 300;
+		color: #e1e1e1;
+	}
+}
+
+.reviews-author {
+	margin-top: 40px;
+	h4 {
+		font-size: em(16);
+		font-weight: 100;
+		margin: 25px 0 0;
+		color: $color-primary;
+	}
+	p {
+		font-size: em(13);
+		font-weight: 300;
+		color: #bbbbbb;
+		margin-top: 0;
+	}
+}
+
+.reviews-author-image {
+	width: 165px;
+	height: 165px;
+	background-color: #878787;
+	border-radius: 100%;
+	border: 4px solid #18cfab;
+	box-shadow: 0 0 0 14px #2b5f62;
+	margin: 35px auto 35px;
+	img {
+		height: 100%;
+		width: 100%;
+		border-radius: 100%;
+		object-fit: cover;
+	}
+}
+
+.reviews-carusel {
+	max-width: 400px;
+	margin: 0 auto;
+	position: relative;
+	//margin-top: 30px;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.reviews-carusel-item {
+	display: inline-block;
+	object-fit: cover;
+	box-shadow: 0 0 0 3px #2b5f62;
+	border-radius: 100%;
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+	outline: none;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 100%;
+	}
+	&+ .reviews-carusel-item {
+		margin-left: 10px;
+	}
+}
+
+.reviews-arrow {
+	max-width: 540px;
+	margin: 0 auto;
+	margin-top: -105px;
+	margin-bottom: 130px;
+	&-prev,
+	&-next {
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		cursor: pointer;
+		text-align: center;
+		color: #fff;
+		font-size: em(25);
+		line-height: 37px;
+		border: 1px solid #fff;
+		&:hover {
+			background-color: $color-primary;
+			border: 1px solid $color-primary;
+		}
+		@media (max-width: $screen-sm) {
+			display: none;
+		}
+	}
+	&-prev {
+		float: left;
+	}
+	&-next {
+		float: right;
+	}
+}

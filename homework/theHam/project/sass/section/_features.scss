@@ -1,0 +1,36 @@
+.features {
+	margin-top: 60px;
+}
+
+.features-item {
+	//padding-top: 65px;
+	cursor: default;
+	padding: 30px 0;
+	@media (max-width: $screen-sm) {
+		padding-top: 20px;
+	}
+	h3 {
+		font-size: em(18);
+		color: #717171;
+		i {
+			display: inline-block;
+			font-size: em(32);
+			margin-right: 5px;
+			transform: translateY(20%);
+			color: $color-primary;
+		}
+	}
+	p {
+		font-size: em(14);
+		font-weight: 300;
+		line-height: 25px;
+		margin-bottom: 0;
+		color: #777;
+	}
+}
+
+.features-item:hover {
+	& h3 {
+		color: $color-primary;
+	}
+}

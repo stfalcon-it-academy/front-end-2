@@ -1,0 +1,44 @@
+.section-title,
+.section-title-invert {
+	font-size: em(36);
+	font-weight: 400;
+	position: relative;
+	display: inline-block;
+	margin-top: 100px;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+	&::after,
+	&::before {
+		display: block;
+		position: absolute;
+		width: 75px;
+		height: 1px;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-25%);
+		background-color: $color-primary;
+		content: '';
+	}
+	&::after {
+		margin-top: 25px;
+		margin-left: -25px;
+	}
+	&::before {
+		margin-top: 30px;
+		margin-right: -25px;
+	}
+	&.left {
+		left: 0;
+		transform: none;
+	}
+}
+
+.section {
+	&-title {
+		color: #4e4e4e;
+		&-invert {
+			color: #fff;
+		}
+	}
+}

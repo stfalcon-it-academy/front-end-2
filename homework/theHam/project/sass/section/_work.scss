@@ -1,0 +1,140 @@
+#work {
+	background-color: #f8fcfe;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.work {
+	margin-top: 75px;
+	margin-bottom: 120px;
+}
+
+.work-tab {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-size: 0;
+	li {
+		display: inline-block;
+		background-color: #fff;
+		@media (max-width: $screen-sm){
+			display: block;
+		}
+	}
+	a {
+		display: inline-block;
+		font-size: 18px;
+		font-size: 14px;
+		color: #717171;
+		padding: 20px 15px;
+		border: 1px solid #ebebeb;
+		transition: all .3s;
+		@media (max-width: $screen-sm) {
+			width: calc(100% - 30px);
+			font-size: 16px;
+			border: 0;
+		}
+		&.active {
+			color: $color-primary;
+			border-top: 2px solid $color-primary;
+			@media (max-width: $screen-sm) {
+				transition: all .3s;
+				border: 0;
+				font-size: 25px;
+				//padding: 26px 15px;
+			}
+		}
+	}
+}
+
+.work-load {
+	text-align: center;
+	margin: -40px 0 120px;
+	transition: all .3s;
+}
+
+.work-content {
+	margin-top: 75px;
+	padding: 0 15px;
+	@include clearfix;
+}
+
+.work-load-content {
+	@extend .work-content;
+	margin: 0;
+}
+
+.work-item {
+	position: relative;
+	float: left;
+	width: 25%;
+	font-size: 0;
+	@media (max-width: $screen-sm) {
+		width: 50%;
+	}
+	@media (max-width: 380px) {
+		width: 100%;
+	}
+	img {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+	}
+}
+
+.work-item:hover {
+	& .work-item-hover-content {
+		opacity: 1;
+	}
+}
+
+.work-item-hover-content {
+	position: absolute;
+	text-align: center;
+	height: 100%;
+	background: #fff;
+	border-top: 4px solid $color-primary;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: calc(100% + 1px);
+	opacity: 0;
+	transition: all .3s;
+}
+
+.work-item-hover-group {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	cursor: default;
+	i {
+		color: $color-primary;
+		padding: 10px;
+		font-size: 14px;
+		border: 1px solid $color-primary;
+		border-radius: 100%;
+		cursor: pointer;
+		&+ i {
+			margin-left: 5px;
+		}
+		&:hover {
+			background-color: $color-primary;
+			color: #fff;
+		}
+	}
+	h5 {
+		font-size: 14px;
+		font-weight: 700;
+		color: $color-primary;
+		text-transform: uppercase;
+		margin: 10px 0;
+	}
+	p {
+		font-size: 12px;
+		font-weight: 300;
+		margin: 0;
+		color: #8a8a8a;
+	}
+}

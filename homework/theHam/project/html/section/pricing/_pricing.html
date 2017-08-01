@@ -1,0 +1,75 @@
+<section id="pricing">
+	<div class="container">
+		<div class="row wow fadeInDown" data-wow-offset="500" data-wow-duration="1s">
+			<h2 class="section-title">Our Pricing Table</h2>
+		</div>
+		<div class="row pricing">
+			@@loop('./_pricing-item.html', [
+				{ 
+					"title": "Personal",
+					"price": "99",
+					"class": "",
+					"table": {
+						"1": "1 Hosting",
+						"2": "2 Email Marketing",
+						"3": "5 Database",
+						"4": "2 Design Pack",
+						"5": "3 Website Layouts",
+						"6": "5 Header Style",
+						"7": "3 Online Store"
+					},
+					"wow-animation": "fadeInUp",
+					"wow-delay": "0.3s"
+				},
+				{ 
+					"title": "Business",
+					"price": "199",
+					"class": "",
+					"table": {
+						"1": "1 Hosting",
+						"2": "2 Email Marketing",
+						"3": "5 Database",
+						"4": "2 Design Pack",
+						"5": "3 Website Layouts",
+						"6": "5 Header Style",
+						"7": "3 Online Store"
+					},
+					"wow-animation": "fadeInDown",
+					"wow-delay": "0.35s"
+				},
+				{ 
+					"title": "Professional",
+					"price": "299",
+					"class": "active",
+					"table": {
+						"1": "1 Hosting",
+						"2": "2 Email Marketing",
+						"3": "5 Database",
+						"4": "2 Design Pack",
+						"5": "3 Website Layouts",
+						"6": "5 Header Style",
+						"7": "3 Online Store"
+					},
+					"wow-animation": "fadeInUp",
+					"wow-delay": "0.4s"
+				},
+				{ 
+					"title": "Diamond",
+					"price": "299",
+					"class": "",
+					"table": {
+						"1": "1 Hosting",
+						"2": "2 Email Marketing",
+						"3": "5 Database",
+						"4": "2 Design Pack",
+						"5": "3 Website Layouts",
+						"6": "5 Header Style",
+						"7": "3 Online Store"
+					},
+					"wow-animation": "fadeInDown",
+					"wow-delay": "0.45s"
+				}
+			])
+		</div>
+	</div>
+</section>

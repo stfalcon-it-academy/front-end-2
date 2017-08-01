@@ -1,0 +1,156 @@
+.slider {
+
+}
+
+.slider-item {
+	position: relative;
+	outline: none;
+	height: 100vh;
+	color: #fff;
+	cursor: default;
+	@media (max-width: $screen-sm) {
+		height: 600px;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.items-text-group {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	padding: 0 20px;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	@media (max-width: 991px) {
+		font-size: 14px;
+	}
+	@media (max-width: 500px) {
+		top: 55%;
+	}
+	@media (max-width: 350px) {
+		font-size: em(12);
+	}
+	span {
+		color: $color-primary;
+	}
+	h3 {
+		text-transform: uppercase;
+		font-size: em(35);
+		margin: 0;
+	}
+	h2 {
+		text-transform: uppercase;
+		font-size: em(79);
+		line-height: 1.15;
+		margin: 0;
+	}
+	p {
+		color: #d4d4d4;
+		font-size: em(30);
+		font-weight: 300;
+		margin: 8px 0 0 0;
+	}
+	a.btn {
+		margin-top: 70px;
+		@media (max-width: 991px) {
+			margin: 25px 0;
+		}
+		@media (max-width: 350px) {
+			font-size: em(16);
+		}
+		&+.btn {
+			margin-left: 30px;
+			@media (max-width: 350px) {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+.thumbnail {
+	position: absolute;
+	bottom: 100px;
+	width: 100%;
+	text-align: center;
+	right: 100px;
+	@media (min-width: 991px) {
+		text-align: right;
+	}
+	@media (max-width: 991px) {
+		bottom: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	@media (max-width: $screen-sm) {
+		display: none;
+	}
+}
+
+.thumbnail-slider {
+	width: 170px;
+	height: 105px;
+	margin: 0 auto;
+	div {
+		outline: none;
+	}
+	img {
+		width: 100%;
+		object-fit: cover;
+	}
+	@media (max-width: 540px) {
+		display: none;
+	}
+	@media (min-width: 991px) {
+		margin-left: 100%;
+		transform: translateX(-100%);
+	}
+}
+
+.arrow-prev,
+.arrow-next {
+	display: inline-block;
+	height: 62px;
+	width: 62px;
+	text-align: center;
+	font-size: em(35);
+	z-index: 4;
+	line-height: 50px;
+	background-color: red;
+	margin-top: 20px;
+	cursor: pointer;
+	user-select: none;
+	&+ [class^='arrow'] {
+		margin-left: 41px;
+	}
+	i {
+		color: #fff;
+		vertical-align: middle;
+	}
+	@media (max-width: 540px) {
+		display: none;
+	}
+}
+
+.arrow {
+	&-prev {
+		background-color: #3c4140;
+		@media (max-width: 540px) {
+			//float: left;
+			margin-top: 0;
+			transform: translateY(-90%);
+		}
+	}
+	&-next {
+		background-color: $color-primary;
+		@media (max-width: 540px) {
+			//float: right;
+			margin-top: 0;
+			transform: translateY(-90%);
+		}
+	}
+}

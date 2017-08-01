@@ -1,0 +1,21 @@
+.purchase {
+	background: #40474b url('../img/purchase/purchase-bg.jpg') no-repeat center center;
+	background-origin: border-box;
+	background-size: cover;
+	color: #d8d8d8;
+	margin-top: 100px;
+	text-align: center;
+	padding: 100px 30px;
+	h2 {
+		font-size: em(40);
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #18cfab;
+		margin: 0;
+	}
+	p {
+		font-size: em(16);
+		font-weight: 400;
+		margin-bottom: 75px;
+	}
+}
