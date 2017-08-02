@@ -6,6 +6,7 @@ html {
 .container-s {
   width: 1170px;
   margin: auto;
+  max-width: 100%;
 }
 
 .header {
@@ -22,8 +23,9 @@ html {
   width: 100%;
   height: 52px;
   text-align: center;
-  /*position: fixed;*/
-  /*margin-top: 0;*/
+  position: fixed;
+  top: 0;
+  left: 0;
   }
 
 .sarajevo {
@@ -69,7 +71,7 @@ html {
 
 .header-menu li {
   display: inline-block;
-}
+  }
 
 .header-menu a{
   font-size: 12px;
@@ -80,6 +82,11 @@ html {
   margin: 0;
 }
 
+/*.header-menu a:active {*/
+  /*border-top: 2px solid #4c76ff;*/
+  /*padding-top: -20px;*/
+/*}*/
+
 .logo {
   font-size: 62px;
   font-family: "Lato";
@@ -87,7 +94,7 @@ html {
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: center;
-  margin-top: 227px;
+  padding-top: 227px;
   padding-left: 60px;
 }
 
@@ -245,7 +252,7 @@ html {
 }
 
 .iphone-content .blocks:hover {
-  background-color: #fefce9;
+    background-color: #fefce9;
 }
 
 .iphone-content i {
@@ -257,10 +264,11 @@ html {
   margin: 15px 0 50px 0;
   }
 
-.iphone-content .blocks i:hover {
+.iphone-content .blocks:hover i {
   font-size: 45px;
   color: #2b282b;
 }
+
 
 .Accusan-timar {
   font-size: 13.4px;
@@ -350,10 +358,11 @@ html {
   color: #ffffff;
   text-decoration: none;
 }
-.works-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+.work-content {
+  padding-top: 75px;
+  width: 1170px;
+display: inline-block;
+
 }
 
 .works-wrapper {
@@ -393,6 +402,7 @@ html {
 }
 
 .teamman {
+  height: 300px;
   width: 225px;
   margin: 0 -10px;
 }
@@ -415,15 +425,40 @@ html {
   text-align: center;
 }
 
-.figure:hover {
-  background: rgba(76, 118, 255, .9);
-  color: #fff;
-  width: 100%;
-  height: auto;
+.teamman-hover {
+  display: none;
 }
 
+.teamman:hover .teamman-hover {       /*тут якась біда*/
+  display: inherit;
+  height: 249px;
+  width: 224px;
+  background-color: rgba(85,125,255,0.9);
+  color: #FFFFFF;
+  position: relative;
+  text-align: center;
+  font-size: 13.27px;
+  transition: 0.7s Ease;
+  margin-top: -249px;
+ }
 
+.teamman-hover .title {
+  text-align: center;
+  font-weight: 600;
+  padding-top: 20px;
+}
 
+.teamman-hover a{
+  color: #FFFFFF;
+  padding: 60px 10px 0;
+  font-size: 18px;
+}
+
+.teamman-hover p {
+  margin: 10px 20px 60px;
+  font-size: 13.27px;
+  line-height: 1.5;
+}
 
 /*----------------------FUN FACTS-----------------*/
 .fun-back {
@@ -472,6 +507,7 @@ html {
   border-radius: 50%;
   border-color: rgba(255, 255, 255, 0.4);
   padding-top: 30%;
+  margin: auto;
   }
 
 .fun-content ul {
@@ -488,19 +524,23 @@ html {
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
-  padding-top: 15px;
+  padding: 15px;
   display: block;
  }
 
-.fun-content li span {
+.fun-content li .stat {
   font-size: 45px;
   font-family: "Open Sans";
   font-weight: 600;
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: center;
+  padding: 30px 0 10px;
   }
 
+.fun-content p {
+  text-align: center;
+}
 
 /*------------------------------CONTACT------------------------------------*/
 .contact {
@@ -532,7 +572,7 @@ html {
 .contact-content {
   padding-top: 75px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
 .adress-title {
@@ -547,6 +587,68 @@ adress {
   font-family: "Open Sans";
   color: #d1d3d5;
   line-height: 1.455;
+}
+
+.say {
+  font-size: 24px;
+  font-family: "Open Sans";
+  color: rgb(6, 32, 51);
+  font-weight: bold;
+  line-height: 1;
+}
+
+.message {
+  padding: 0 45px;
+}
+
+.message input {
+  background: none;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #e0e0e0;
+  padding: 10px 0;
+  width: 49%;
+
+  }
+
+
+.message textarea {
+  background: none;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #e0e0e0;
+  padding: 10px 0;
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+}
+
+.sending {
+  float: right;
+  font-size: 13.35px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.sending:hover {
+  text-decoration: none;
+}
+
+.sending i {
+  color: #84a1ff;
+}
+
+.contact-social li {
+  list-style: none;
+}
+
+.contact-social i {
+  color: #cdd2d6;
+  padding-bottom: 15px;
+}
+
+.contact-social i:hover {
+  color: #84a1ff;
 }
 
 /*------------------------------ MAP------------------------------*/
@@ -568,7 +670,7 @@ adress {
 
 .footer-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 50px 160px 0;
 }
 

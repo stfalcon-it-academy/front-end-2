@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>sarajevo</title>
-  <link rel="stylesheet" href="css\style.css">
-  <link rel="stylesheet" href="css\normalize.css">
-  <link rel="stylesheet" href="css\bootstrap.min.css">
-  <link rel="stylesheet" href="css\bootstrap-theme.min.css">
-  <link rel="stylesheet" href="css\font-awesome.min.css">
-  <link rel="stylesheet" href="css\pe-icon-7-stroke.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,400,900|Open+Sans:400,600" rel="stylesheet">
 </head>
-<div>
+<body>
 <!--------------------HEADER--------------------->
  <div  class="header">
    <div class="menu">
@@ -163,15 +165,15 @@
   </div>
   <div class="filter">
     <ul id="filter">
-      <li><span class="filter all" data-filter="app card icon web">All</span></li>
+      <li><span class="filter all" data-filter="graph card icon web">All</span></li>
       <li><span class="filter" data-filter="graph">Branding</span></li>
       <li><span class="filter" data-filter="cart">Web</span></li>
       <li><span class="filter" data-filter="logo">LogoDesign</span></li>
       <li><span class="filter" data-filter="photo">Photography</span></li>
   </ul>
-  <!--</div>-->
-  <!--<div class="works-content">-->
-  <!--</div>-->
+  </div>
+  <!--<div class="work-content">-->
+
   <!--<div class="works-graph" data-cat="graph">-->
     <!--<figure class="works-wrapper">-->
       <!--<img src="images/3_02.jpg" alt="" />-->
@@ -217,7 +219,7 @@
       <!--<img src="images/3_09.jpg" alt="" />-->
     <!--</figure>-->
   <!--</div>-->
-  </div>
+  <!--</div>-->
 </div>
 <!----------------TEAM---------------->
 <div class="container-s our-team"><a id="Team"></a>
@@ -227,26 +229,24 @@
     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
     doloremque laudantium, totam rem aperiam,eaque<br> ipsa quae ab illo inventore
   </div>
-  <div class="team-content">
+  <div class="team-content js-slider">
     <div class="teamman">
-      <figure>
       <img src="images/Layer24.png" alt="">
-      <figcaption class="image-hover">
-        <span>Nemo enim ipsam voluptatem quia voluptas</span>
+      <div class="teamman-hover">
+        <div class="title">Nemo enim ipsam<br> voluptatem quia voluptas</div>
         <p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
         <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a>
-      </figcaption>
-      </figure>
+      </div>
       <div class="teammen-name">John Filmr Doe
       <span><p>Managing Director</span>
       </div>
     </div>
     <div class="teamman">
       <img src="images/Layer25.png" alt="">
-      <div class="image-hover">
-        <span>Nemo enim ipsam voluptatem quia voluptas</span>
+      <div class="teamman-hover">
+        <div class="title">Nemo enim ipsam<br> voluptatem quia voluptas</div>
         <p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
         <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
@@ -256,10 +256,10 @@
         <span><p>Lead Designer</span>
       </div>
     </div>
-        <div class="teamman">
+    <div class="teamman">
       <img src="images/Layer26.png" alt="">
-        <div class="image-hover">
-        <span>Nemo enim ipsam voluptatem quia voluptas</span>
+        <div class="teamman-hover">
+          <div class="title">Nemo enim ipsam<br> voluptatem quia voluptas</div>
         <p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
         <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
@@ -271,8 +271,8 @@
     </div>
     <div class="teamman">
       <img src="images/Layer27.jpg" alt="">
-      <div class="image-hover">
-        <span>Nemo enim ipsam voluptatem quia voluptas</span>
+      <div class="teamman-hover">
+        <div class="title">Nemo enim ipsam<br> voluptatem quia voluptas</div>
         <p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
         <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
@@ -282,15 +282,6 @@
         <span><p>Sr. UI Designer</span>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
   </div>
 </div>
 <!------------FUN FACTS--------------->
@@ -302,16 +293,16 @@
         <img src="images/heart-empty.png" class="heart-little"></img>
         <ul>
           <li><div class="fun-icon"><img src="images/Clock.svg"></img></div>
-            <span>3200</span>
+            <div class="stat">3200</div>
             <p>Hourse of work</li>
           <li><div class="fun-icon"><img src="images/Clients.svg"></img></div>
-            <span>120</span>
+            <div class="stat">120</div>
             <p>Satisfied Clinets</li>
           <li><div class="fun-icon"><img src="images/Rocket.svg"></img></div>
-            <span>360</span>
+            <div class="stat">360</div>
             <p>Projects delivered</li>
           <li><div class="fun-icon"><img src="images/Cup.svg"></img></div>
-            <span>42</span>
+            <div class="stat">42</div>
             <p>Awards Won</li>
         </ul>
       </div>
@@ -339,13 +330,13 @@
     <div class="message">
       <div class="say">Say hello!</div>
       <form>
-        <input type="text" name="Name" placeholder="Name"/>
-        <input type="email" name="email" placeholder="Email"/>
+        <input type="text" name="Name" placeholder="Name" minlength="2" required/>
+        <input type="email" name="email" placeholder="Email" required/>
         <textarea placeholder="Message"></textarea>
-        <a href="#" class="send"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> Send message</a>
+        <a href="#"  class="sending"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> Send message</a>
       </form>
     </div>
-    <div class="social">
+    <div class="contact-social">
       <ul>
         <li><a href="#"><i class="fa fa-behance fa-lg" aria-hidden="true"></i></a></li>
         <li><a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
@@ -386,14 +377,15 @@
           <tr>
             <td>
           <li><a href="#">Envato</a></li>
-          <li><a href="#">Themeforest</a></li>
           <li><a href="#">Themecurve</a></li>
-          <li><a href="#">Microsoft</a></li>
+          <li><a href="#">Kreativeshowcase</a></li>
+          <li><a href="#">Freebiescurve</a></li>
+
             </td>
             <td>
-          <li><a href="#">Kreativeshowcase</a></li>
+          <li><a href="#">Themeforest</a></li>
+          <li><a href="#">Microsoft</a></li>
           <li><a href="#">Google</a></li>
-          <li><a href="#">Freebiescurve</a></li>
           <li><a href="#">Yahoo</a></li>
             </td>
           </tr>
@@ -403,7 +395,11 @@
       </div>
     </div>
   </div>
-<!-------------------FOOTER END------------------->
+<!----------FOOTER END------------------->
+
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/common.js"></script>
 </body>
 </html>
 
