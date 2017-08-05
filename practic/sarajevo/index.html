@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,400,900|Open+Sans:400,600" rel="stylesheet">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 </head>
 <body>
 <!--------------------HEADER--------------------->
@@ -156,71 +157,62 @@
   </section>
 </div>
 <!------------------------------------------------------------WORKS------------------------------------------->
-<div class="works container-s"><a id="Works"></a>
+<div class="works"><a id="Works"></a>
   <div class="works-title">works</div>
   <img src="images/heart.png" class="heart"></img>
   <div class="works-title2">
   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
   doloremque laudantium, totam rem aperiam,eaque<br> ipsa quae ab illo inventore
   </div>
-  <div class="filter">
+  <div class="filter ">
     <ul id="filter">
-      <li><span class="filter all" data-filter="graph card icon web">All</span></li>
-      <li><span class="filter" data-filter="graph">Branding</span></li>
-      <li><span class="filter" data-filter="cart">Web</span></li>
-      <li><span class="filter" data-filter="logo">LogoDesign</span></li>
-      <li><span class="filter" data-filter="photo">Photography</span></li>
+      <li><span class="filter" data-filter="all">All</span></li>
+      <li><span class="filter" data-filter=".graph">Branding</span></li>
+      <li><span class="filter" data-filter=".cart">Web</span></li>
+      <li><span class="filter" data-filter=".logotype">LogoDesign</span></li>
+      <li><span class="filter" data-filter=".photo">Photography</span></li>
   </ul>
   </div>
-  <!--<div class="work-content">-->
-
-  <!--<div class="works-graph" data-cat="graph">-->
-    <!--<figure class="works-wrapper">-->
-      <!--<img src="images/3_02.jpg" alt="" />-->
-      <!--&lt;!&ndash;<figcaption>&ndash;&gt;-->
-        <!--&lt;!&ndash;<i class="fa fa-eye" aria-hidden="true"></i>&ndash;&gt;-->
-        <!--&lt;!&ndash;<div class="img-hover-title">>Labore et dolore magnam  </div>&ndash;&gt;-->
-        <!--&lt;!&ndash;<span>Photography</span>&ndash;&gt;-->
-      <!--&lt;!&ndash;</figcaption>&ndash;&gt;-->
-    <!--</figure>-->
-  <!--</div>-->
-  <!--<div class="works-graph" data-cat="graph">-->
-    <!--<figure class="works-wrapper">-->
-      <!--<img src="images/3_03.jpg" alt="" />-->
-    <!--</figure>-->
-  <!--</div>-->
-  <!--<div class="works-graph" data-cat="graph">-->
-    <!--<figure class="works-wrapper">-->
-      <!--<img src="images/3_04.jpg" alt="" />-->
-    <!--</figure>-->
-  <!--</div>-->
-  <!--<div class="works-graph" data-cat="graph">-->
-    <!--<figure class="works-wrapper">-->
-      <!--<img src="images/3_05.jpg" alt="" />-->
-    <!--</figure>-->
-  <!--</div>-->
-  <!--<div class="works-graph" data-cat="graph">-->
-    <!--<figure class="works-wrapper">-->
-      <!--<img src="images/3_06.jpg" alt="" />-->
-    <!--</figure>-->
-  <!--</div>-->
-  <!--<div class="works-graph" data-cat="graph">-->
-    <!--<figure class="works-wrapper">-->
-      <!--<img src="images/3_07.jpg" alt="" />-->
-    <!--</figure>-->
-  <!--</div>-->
-  <!--<div class="works-graph" data-cat="graph">-->
-    <!--<figure class="works-wrapper">-->
-      <!--<img src="images/3_08.jpg" alt="" />-->
-    <!--</figure>-->
-  <!--</div>-->
-  <!--<div class="works-graph" data-cat="graph">-->
-    <!--<figure class="works-wrapper">-->
-      <!--<img src="images/3_09.jpg" alt="" />-->
-    <!--</figure>-->
-  <!--</div>-->
-  <!--</div>-->
+  <div class="work-content">
+  <div class="wc-element mix graph cart" data-order="graph cart">
+       <img src="images/3_02.jpg" alt="" />
+    <!--<div class="wc-content-hover">-->
+    <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
+    <!--<div class="img-hover-title">>Labore et dolore magnam  </div>-->
+    <!--<span>Photography</span>-->
+    <!--</div>-->
+  </div>
+  <div class="wc-element mix cart" data-order="cart">
+       <img src="images/3_03.jpg" alt="" />
+     </div>
+  <div class="wc-element mix photo" data-order="photo">
+       <img src="images/3_04.jpg" alt="" />
+  </div>
+  <div class="wc-element mix logotype" data-order="logo">
+       <img src="images/3_05.jpg" alt="" />
+  </div>
+  <div class="wc-element mix photo" data-order="photo">
+      <img src="images/3_06.jpg" alt="" />
+  </div>
+  <div class="wc-element mix logotype" data-order="logo">
+      <img src="images/3_07.jpg" alt="" />
+  </div>
+  <div class="wc-element mix graph" data-order="graph">
+      <img src="images/3_08.jpg" alt="" />
+  </div>
+  <div class="wc-element mix cart graph" data-order="cart graph">
+      <img src="images/3_09.jpg" alt="" />
+  </div>
+  </div>
 </div>
+
+
+
+<!--<figcaption>-->
+<!--<i class="fa fa-eye" aria-hidden="true"></i>-->
+<!--<div class="img-hover-title">>Labore et dolore magnam  </div>-->
+<!--<span>Photography</span>-->
+<!--</figcaption>-->
 <!----------------TEAM---------------->
 <div class="container-s our-team"><a id="Team"></a>
   <div class="team-title">Meet Our Team</div>
@@ -282,6 +274,32 @@
         <span><p>Sr. UI Designer</span>
       </div>
     </div>
+    <div class="teamman">
+      <img src="images/Layer25.png" alt="">
+      <div class="teamman-hover">
+        <div class="title">Nemo enim ipsam<br> voluptatem quia voluptas</div>
+        <p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+        <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a>
+      </div>
+      <div class="teammen-name">Chystine Hineu
+        <span><p>Lead Designer</span>
+      </div>
+    </div>
+    <div class="teamman">
+      <img src="images/Layer26.png" alt="">
+      <div class="teamman-hover">
+        <div class="title">Nemo enim ipsam<br> voluptatem quia voluptas</div>
+        <p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+        <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a>
+      </div>
+      <div class="teammen-name">Martin Matrone
+        <span><p>Lead Developer</span>
+      </div>
+    </div>
   </div>
 </div>
 <!------------FUN FACTS--------------->
@@ -333,7 +351,7 @@
         <input type="text" name="Name" placeholder="Name" minlength="2" required/>
         <input type="email" name="email" placeholder="Email" required/>
         <textarea placeholder="Message"></textarea>
-        <a href="#"  class="sending"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> Send message</a>
+        <button type="submit" href="#"  class="sending"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> Send message</button>
       </form>
     </div>
     <div class="contact-social">
@@ -397,8 +415,10 @@
   </div>
 <!----------FOOTER END------------------->
 
+  <script src="js/jquery-3.2.1.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
   <script src="js/common.js"></script>
 </body>
 </html>

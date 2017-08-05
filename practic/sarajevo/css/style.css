@@ -11,6 +11,7 @@ html {
 
 .header {
   height: 700px;
+  width: 100%;
   background-image: url(../images/background-image.jpg);
 }
 
@@ -19,7 +20,7 @@ html {
 }
 
 .purple-line {
-  background-color: rgba(16, 22, 54,0.2);
+  background-color: rgba(16, 22, 54,0.5);
   width: 100%;
   height: 52px;
   text-align: center;
@@ -67,6 +68,18 @@ html {
   list-style: none;
   padding-left: 670px;
   margin-top: -22px;
+}
+
+@media (max-width:1024px) {
+  .header-menu {
+    padding-left: 500px;
+  }
+}
+
+@media (max-width:860px) {
+  .header-menu {
+    padding-left: 325px;
+  }
 }
 
 .header-menu li {
@@ -298,12 +311,69 @@ html {
   width: 220px;
   padding-top: 15px;
 }
+@media (max-width:1024px) {
+  .iphone-content .rightside p {
+    width: 120px;
+  }
 
+  .iphone-content .blocks {
+    padding: 15px 0;
+  }
+}
 
+@media (max-width:860px) {
+  .iphone-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .iphone-content {
+    padding-top: 30px;
+  }
+  .iphone-content .rightside p {
+    width: 100%;
+  }
+
+  .iphone-content .rightside p {
+    padding-top: 10px;
+    width: 600px;
+  }
+
+  .iphone-content .blocks {
+    padding: 5px 0;
+  }
+
+  .iphone-content .rightside {
+    padding: 0 0;
+    width: 90%;
+  }
+
+  .iphone-content .leftside {
+    width: 10%;
+  }
+
+  .iphone-content .col-2{
+display: flex;
+    justify-content: center;
+  }
+
+  .iphone-content i {
+    margin: 15px 0 25px 0;
+  }
+
+  .iphone-content .col-2 img{
+    width: 30%;
+    height: 30%;
+  }
+
+  .iphone {
+    height: 850px;
+  }
+}
 /*------------------------WORKS---------------------------*/
 
 .works {
-  height: 848px;
+  height: 1070px;
   background-color: #ffffff;
   }
 
@@ -341,7 +411,7 @@ html {
   }
 
 .filter span {
-    font-size: 14px;
+  font-size: 14px;
   font-family: "Lato";
   font-weight: 900;
   color: rgb(6, 32, 51);
@@ -349,7 +419,6 @@ html {
   text-align: center;
   text-decoration: none;
   padding: 6px 20px;
-
   }
 
 .filter span:hover {
@@ -358,17 +427,97 @@ html {
   color: #ffffff;
   text-decoration: none;
 }
+
 .work-content {
-  padding-top: 75px;
-  width: 1170px;
-display: inline-block;
-
+  padding: 80px 0 110px;
+  width: 100%;
+  display: inline-block;
 }
 
-.works-wrapper {
-  height: 220px;
-  width: 295px;
+.wc-element  {
+  position: relative;
+  width: 25%;
+  float: left;
+  overflow: hidden;
 }
+
+.wc-element img {
+  width: 100%;
+  display: block;
+ }
+
+@media (max-width:1024px) {
+  .works {
+    height: 800px;
+  }
+
+  .work-content {
+    padding: 80px 0 0;
+  }
+}
+
+@media (max-width:860px) {
+  .filter ul {
+    padding: 30px 20px 0;
+  }
+
+  .work-content{
+    padding: 30px 0 0;
+  }
+
+  .wc-element {
+    width: 50%;
+  }
+
+  .works {
+    height: 1650px;
+  }
+
+}
+/*.wc-content-hover {*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*background: rgba(76, 118, 255, .9);*/
+  /*color: #fff;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*text-align: center;*/
+  /*opacity: 1;*/
+  /*display: none;*/
+/*}*/
+
+/*.wc-content-hover i {*/
+  /*width: 30px;*/
+  /*height: 30px;*/
+  /*border-radius: 50%;*/
+  /*line-height: 30px;*/
+  /*border: 1px solid #fff;*/
+  /*text-align: center;*/
+  /*color: #fff;*/
+  /*margin-top: 30%;*/
+/*}*/
+
+
+/*.wc-content-hover span*/
+
+
+/*.wc-element .img:hover {*/
+  /*position: absolute;*/
+  /*background-color: #2aabd2;*/
+  /*display: inherit;*/
+/*}*/
+
+/*.wc-content-hover {*/
+  /*display: inherit;*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*background: rgba(76, 118, 255, .9);*/
+  /*color: #fff;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*text-align: center;*/
+  /*opacity: 1;*/
+/*}*/
 
 /*-----------------------------TEAM---------------------------*/
 .our-team {
@@ -396,16 +545,17 @@ display: inline-block;
 }
 
 .team-content {
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
   padding-top: 120px;
+  padding-left: 50px;
 }
 
-.teamman {
+.teamman {                      /*при підключенні слайдера змінюється розмір блока*/
+  position: relative;
   height: 300px;
   width: 225px;
-  margin: 0 -10px;
-}
+  text-align: center;
+  }
 
 .teammen-name{
   font-size: 15px;
@@ -435,7 +585,7 @@ display: inline-block;
   width: 224px;
   background-color: rgba(85,125,255,0.9);
   color: #FFFFFF;
-  position: relative;
+  position: absolute;
   text-align: center;
   font-size: 13.27px;
   transition: 0.7s Ease;
@@ -459,6 +609,34 @@ display: inline-block;
   font-size: 13.27px;
   line-height: 1.5;
 }
+
+@media (max-width:860px) {
+  .team-title2 {
+    padding-top: 25px;
+  }
+  .team-content {
+    padding-top: 50px;
+  }
+
+  .teamman {
+    height: 70%;
+    width: 70%;
+  }
+
+  .teamman img{
+    height: 70%;
+    width: 70%;
+  }
+
+  .teamman:hover {
+    display: none;
+  }
+
+  .our-team {
+    height: 465px;
+  }
+}
+
 
 /*----------------------FUN FACTS-----------------*/
 .fun-back {
@@ -608,9 +786,7 @@ adress {
   border-bottom: 2px solid #e0e0e0;
   padding: 10px 0;
   width: 49%;
-
   }
-
 
 .message textarea {
   background: none;
@@ -624,6 +800,8 @@ adress {
 }
 
 .sending {
+  border: none;
+  background-color: inherit;
   float: right;
   font-size: 13.35px;
   color: #000000;
@@ -650,6 +828,45 @@ adress {
 .contact-social i:hover {
   color: #84a1ff;
 }
+
+@media (max-width:1024px) {
+  .contact {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width:860px) {
+  .contact-title {
+    padding-top: 40px;
+  }
+
+  .contact-title2 {
+    padding-top: 35px;
+  }
+
+  .contact-content {
+    padding-top: 35px;
+  }
+
+  .message {
+    padding: 0 25px;
+  }
+
+  .contact {
+    height: 500px;
+  }
+
+  .adress-title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .adress {
+    font-size: 8px;
+    line-height: 1.2;
+  }
+}
+
 
 /*------------------------------ MAP------------------------------*/
 
@@ -681,6 +898,7 @@ adress {
 
 .footer-first-block {
   width: 250px;
+  padding-right: 30px;
 }
 
 .footer-first-block p {
@@ -738,6 +956,7 @@ adress {
   width: 250px;
   height: 100px;
   display: block;
+  padding-left: 30px;
 }
 
 .footer-third-block ul {
@@ -760,4 +979,10 @@ adress {
   width: 100%;
   border-spacing: 7px 50px;
 
+}
+
+@media (max-width:860px) {
+  .footer-content {
+    padding: 30px 50px 0;
+  }
 }
