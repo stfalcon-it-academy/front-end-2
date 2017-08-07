@@ -1119,6 +1119,7 @@ address {
 @media (max-width:640px) {
   .footer {
     height: 460px;
+  }
 }
 
 .footer-content {
@@ -1184,6 +1185,7 @@ address {
     padding-top: 10px;
     padding-bottom: 20px;
   }
+}
 
 .footer-second-block span {
   font-size: 11.7px;
@@ -1261,7 +1263,6 @@ address {
 .footer-third-block table {
   width: 100%;
   border-spacing: 7px 50px;
-
 }
 
 @media (max-width:1024px) {
