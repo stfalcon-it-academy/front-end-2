@@ -237,7 +237,7 @@ html {
 }
 
 .features {
-  height: 435px;
+  /*height: 435px;*/
   width: 1170px;
   }
 
@@ -285,7 +285,7 @@ span.line {
   width: auto;
   display: flex;
   justify-content: space-around;
-  padding: 78px 80px 0 75px;
+  padding: 78px 80px 80px 75px;
 }
 
 @media (max-width:640px) {
@@ -335,7 +335,7 @@ span.line {
 
 /*---------------------------IPHONE------------------*/
 .iphone {
-  height: 800px;
+  /*height: 800px;*/
   background-color: #ffffff;
 }
 
@@ -514,7 +514,7 @@ display: flex;
 /*------------------------WORKS---------------------------*/
 
 .works {
-  height: 1070px;
+  /*height: 1070px;*/
   background-color: #ffffff;
   }
 
@@ -532,11 +532,11 @@ display: flex;
 }
 
 .works-title2 {
-  font-size: 14px;
-  font-family: "Lato";
-  font-weight: 100;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 200;
   color: rgba(6, 32, 51, 1);
-  line-height: 1.268;
+  line-height: 2;
   text-align: center;
   padding-top: 41px;
 }
@@ -550,6 +550,7 @@ display: flex;
 .filter li {
   display: inline-block;
   height: 30px;
+  cursor: pointer;
   }
 
 .filter span {
@@ -574,7 +575,8 @@ display: flex;
   padding: 80px 0 110px;
   width: 100%;
   display: inline-block;
-  }
+  cursor: pointer;
+    }
 
 .wc-element  {
   position: relative;
@@ -695,26 +697,26 @@ display: flex;
 
 .team-title2 {
   font-size: 15px;
-  font-family: "Lato";
+  font-family: "Open Sans";
   font-weight: 300;
   color: rgb(6, 32, 51);
   line-height: 1.333;
   text-align: center;
   padding-top: 50px;
+  line-height: 2;
 }
 
 .team-content {
   text-align: center;
   padding-top: 120px;
-  /*padding-left: 50px;*/
-}
+  }
 
 .teamman {                      /*при підключенні слайдера змінюється розмір блока*/
   position: relative;
   height: 300px;
   width: 225px;
   text-align: center;
-}
+  }
 
 .teammen-name{
   font-size: 15px;
@@ -738,7 +740,7 @@ display: flex;
   display: none;
 }
 
-.teamman:hover .teamman-hover {       /*тут якась біда*/
+.teamman:hover .teamman-hover {
   display: inherit;
   height: 249px;
   width: 224px;
@@ -947,13 +949,14 @@ display: flex;
 
 .contact-title2 {
   font-size: 18px;
-  font-family: "Lato";
+  font-family: "Open Sans";
   font-weight: 200;
   color: rgb(6, 32, 51);
   line-height: 1.333;
   text-align: center;
   padding-top: 55px;
-}
+  line-height: 2;
+ }
 
 .contact-content {
   padding-top: 75px;
@@ -1105,7 +1108,7 @@ address {
 
 .map iframe {
   width: 100%;
-  height: 185px;
+  height: 200px;
   border: none;
   }
 
@@ -1249,6 +1252,11 @@ address {
   margin-left: -40px;
   margin-top: -10px;
   }
+
+.footer-third-block a:hover {
+  color: grey;
+  font-size: 12px;
+}
 
 .footer-third-block a {
   text-decoration: none;
