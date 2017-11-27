@@ -27,6 +27,7 @@ html {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
   }
 
 .sarajevo {
@@ -99,7 +100,7 @@ html {
   }
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .purple-line {
     height: 80px;
   }
@@ -150,7 +151,7 @@ html {
   margin: 0;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .logo {
     padding-left: 0px;
     text-align: center;
@@ -172,7 +173,7 @@ html {
   margin: 0;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .creative {
     font-size: 24px;
     line-height: 2;
@@ -195,7 +196,7 @@ html {
   padding-top: 18px;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .we {
     font-size: 14px;
   }
@@ -209,7 +210,7 @@ html {
   margin: 5px 30px;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .we span {
     width: 20px;
     margin: 5px 20px;
@@ -253,7 +254,7 @@ html {
   margin: 0;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .features-title {
     padding-top: 50px;
   }
@@ -285,10 +286,10 @@ span.line {
   width: auto;
   display: flex;
   justify-content: space-around;
-  padding: 78px 80px 80px 75px;
+  padding: 78px 50px 80px 45px;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .features-col {
     display: flex;
     flex-direction: column;
@@ -348,9 +349,10 @@ span.line {
   line-height: 2;
   text-align: center;
   letter-spacing: 0.1px;
+  margin: 0 5%;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .iphone-title {
     padding-top: 36px;
     font-size: 14px;
@@ -363,7 +365,7 @@ span.line {
   padding: 65px 99px 0;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .iphone-content {
     padding: 25px 20px 0;
   }
@@ -478,7 +480,7 @@ display: flex;
   }
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .iphone {
     height: 920px;
   }
@@ -592,11 +594,11 @@ display: flex;
 
 @media (max-width:1024px) {
   .works {
-    height: 800px;
+    height: 100%;
   }
 
   .work-content {
-    padding: 80px 0 0;
+    padding: 80px 0 50px;
   }
 }
 
@@ -606,7 +608,7 @@ display: flex;
   }
 
   .work-content{
-    padding: 30px 0 0;
+    padding: 30px 0 20px;
   }
 
   .wc-element {
@@ -614,26 +616,17 @@ display: flex;
   }
 
   .works {
-    height: 1650px;
+    height: 100%;
+    padding: 30px 0;
   }
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .wc-element {
     width: 100%;
     }
+ }
 
-  .works {
-    height: 4160px;
-  }
-
-}
-
-@media (max-width:480px) {
-  works {
-    height: 2750px;
-  }
-}
 /*.wc-content-hover {*/
   /*position: absolute;*/
   /*top: 0;*/
@@ -704,19 +697,22 @@ display: flex;
   text-align: center;
   padding-top: 50px;
   line-height: 2;
+  margin: 0 5%;
 }
 
 .team-content {
   text-align: center;
   padding-top: 120px;
-  }
+     }
 
 .teamman {                      /*при підключенні слайдера змінюється розмір блока*/
   position: relative;
   height: 300px;
   width: 225px;
   text-align: center;
+  display: inherit;
   }
+
 
 .teammen-name{
   font-size: 15px;
@@ -741,7 +737,7 @@ display: flex;
 }
 
 .teamman:hover .teamman-hover {
-  display: inherit;
+  display: block;
   height: 249px;
   width: 224px;
   background-color: rgba(85,125,255,0.9);
@@ -751,7 +747,8 @@ display: flex;
   font-size: 13.27px;
   transition: 0.7s Ease;
   margin-top: -249px;
- }
+  margin-left: 36px ;
+  }
 
 .teamman-hover .title {
   text-align: center;
@@ -794,7 +791,8 @@ display: flex;
   }
 
   .our-team {
-    height: 585px;
+    height: 100%;
+    padding: 30px 0;
   }
 }
 
@@ -885,7 +883,7 @@ display: flex;
   padding: 30px 0 10px;
   }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .purple-overlay  {
     height: 560px;
     background-color: rgba(6, 32, 51, 0.8);
@@ -930,7 +928,7 @@ display: flex;
   height: 575px;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .contact {
     height: 650px;
   }
@@ -964,7 +962,7 @@ display: flex;
   justify-content: space-around;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .contact-content {
     padding-top: 45px;
     display: flex;
@@ -986,7 +984,7 @@ address {
   line-height: 1.455;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .adress {
     text-align: center;
   }
@@ -1000,7 +998,7 @@ address {
   line-height: 1;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .say {
     text-align: center;
   }
@@ -1060,7 +1058,7 @@ address {
   color: #84a1ff;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .contact-social ul {
     display: flex;
     flex-direction: row;
@@ -1119,7 +1117,7 @@ address {
   background-color: #010305;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .footer {
     height: 460px;
   }
@@ -1131,7 +1129,7 @@ address {
   padding: 50px 160px 0;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .footer-content {
     display: flex;
     flex-direction: column;
@@ -1148,7 +1146,7 @@ address {
   padding-right: 30px;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .footer-first-block {
     width: 100%;
   }
@@ -1167,7 +1165,7 @@ address {
   width: 250px;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .footer-second-block {
     width: 100%;
   }
@@ -1183,7 +1181,7 @@ address {
   padding-bottom: 35px;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .footer-second-block .block-title {
     padding-top: 10px;
     padding-bottom: 20px;
@@ -1226,7 +1224,7 @@ address {
   padding-bottom: 35px;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .footer-third-block .block-title {
     padding-top: 10px;
     padding-bottom: 20px;
@@ -1240,7 +1238,7 @@ address {
   padding-left: 30px;
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (min-width: 480px) {
   .footer-third-block {
     width: 100%;
     padding-left: 0;
