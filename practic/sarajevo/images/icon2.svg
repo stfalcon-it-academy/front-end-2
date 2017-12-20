@@ -1,0 +1,51 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34.625" height="34.563" viewBox="0 0 34.625 34.563">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #898989;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="434.813" y="917" width="33.625" height="33.563" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#4c76ff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <image id="pencil" x="10.687" y="10.5" width="13" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAMAAABFNRROAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEX///9Mdv9Mdv9Mdv9Mdv9Mdv9Mdv9Mdv9Mdv9Mdv9Mdv9Mdv9Mdv9Mdv9Mdv9Mdv9Mdv8AAAAyah2DAAAAEHRSTlMABrLrZa5LWDbkgzy48dyCCiGt1QAAAAFiS0dEEeK1PboAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhBwkRIxP5Fw7lAAAAPUlEQVQI15XHOQKAIAwEwA2ES1D2/6+1kRhKphvgIyEq/pBUH0Yfhi1ykuSCXGqz4OqoFoy7l7SCZ8xseQEwqANgdiW61AAAAABJRU5ErkJggg=="/>
+  <g transform="translate(-434.313 -916.5)" style="fill: none; filter: url(#filter)">
+    <path id="path" class="cls-1" d="M451.625,917a16.78,16.78,0,1,1-16.8,16.779A16.79,16.79,0,0,1,451.625,917Z" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use transform="translate(-434.313 -916.5)" xlink:href="#path" style="stroke: #898989; filter: none; fill: none"/>
+</svg>
